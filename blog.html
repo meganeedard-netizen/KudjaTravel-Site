@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Kudja Travel – Conseils, Inspirations & Carnets de Voyage aux Antilles</title>
+  <meta name="description" content="Le blog de Kudja Travel : conseils de voyage, itinéraires, bonnes adresses et inspirations pour préparer votre séjour sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kudjatravel.com/blog.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kudjatravel.com/blog.html" />
+  <meta property="og:title" content="Blog | Kudja Travel – Inspirations Antilles" />
+  <meta property="og:description" content="Conseils, itinéraires et bonnes adresses pour vos voyages sur-mesure aux Antilles par Mégane, travel planner en Guadeloupe." />
+  <meta property="og:image" content="https://kudjatravel.com/images/hero.webp" />
+  <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
+  <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #0D0D0B; --sand: #C9B99A; --sand-light: #E8DDD0;
+      --gold: #B8965A; --gold-light: #D4AF6E; --cream: #F5F0E8;
+      --leaf: #3D5A3E; --ocean: #1A3A4A; --white: #FAFAF8;
+      --muted: rgba(249,248,244,0.55); --border: rgba(201,185,154,0.2);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; font-weight: 400; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== NAV ===== */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(13,13,11,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after { content: ''; display: inline-block; width: 4px; height: 4px; border-right: 0.5px solid currentColor; border-bottom: 0.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+    .dropdown-menu { position: absolute; top: 100%; left: 50%; background: rgba(13,13,11,0.97); backdrop-filter: blur(16px); border: 0.5px solid var(--border); min-width: 210px; padding: 1rem 0 0.4rem; opacity: 0; visibility: hidden; transform: translateX(-50%) translateY(4px); transition: opacity 0.22s, transform 0.22s, visibility 0.22s; pointer-events: none; }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+    .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+    .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .lang-switcher { display: flex; align-items: center; gap: 0; border: 0.5px solid var(--border); }
+    .lang-switcher a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 0.45rem 0.7rem; transition: color 0.2s, background 0.2s; }
+    .lang-switcher a:hover { color: var(--cream); }
+    .lang-switcher a.lang-active { color: var(--gold); background: rgba(184,150,90,0.1); }
+    .lang-switcher span { color: var(--border); font-size: 0.6rem; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 110; }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--cream); transition: all 0.3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-mobile a:hover { color: var(--gold-light); }
+    .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
+
+    /* ===== HERO BLOG ===== */
+    .blog-hero {
+      padding: 7rem 3rem 5rem;
+      border-bottom: 0.5px solid var(--border);
+      max-width: 860px;
+    }
+    .blog-hero-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .blog-hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
+    .blog-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+    .blog-hero h1 em { font-style: italic; color: var(--gold-light); }
+    .blog-hero-sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 500px;
+      line-height: 1.85;
+    }
+
+    /* ===== CATEGORIES ===== */
+    .blog-categories {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding: 2rem 3rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .cat-btn {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: none;
+      border: 0.5px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .cat-btn:hover, .cat-btn.active { color: var(--gold-light); border-color: var(--gold); }
+
+    /* ===== ARTICLE À LA UNE ===== */
+    .featured-article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .featured-img {
+      position: relative;
+      overflow: hidden;
+      min-height: 460px;
+    }
+    .featured-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      transition: transform 0.6s ease;
+    }
+    .featured-article:hover .featured-img img { transform: scale(1.04); }
+    .featured-content {
+      padding: 4rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .article-tag {
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+    .featured-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .featured-content h2 em { font-style: italic; color: var(--gold-light); }
+    .article-excerpt {
+      font-size: 0.85rem;
+      line-height: 1.85;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .article-meta-item {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .article-meta-item span { color: var(--sand); }
+    .btn-read {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      transition: color 0.2s;
+    }
+    .btn-read::after { content: '→'; transition: transform 0.2s; }
+    .btn-read:hover { color: var(--gold-light); }
+    .btn-read:hover::after { transform: translateX(4px); }
+
+    /* ===== GRILLE ARTICLES ===== */
+    .blog-section {
+      padding: 5rem 3rem;
+    }
+    .blog-section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    .section-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.15;
+    }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .blog-card {
+      background: var(--ink);
+      display: flex;
+      flex-direction: column;
+      transition: background 0.2s;
+    }
+    .blog-card:hover { background: rgba(255,255,255,0.02); }
+    .blog-card-img {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .blog-card:hover .blog-card-img img { transform: scale(1.05); }
+    .blog-card-body { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+    .blog-card-tag {
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .blog-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .blog-card-excerpt {
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--muted);
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .blog-card-date {
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .blog-card-link {
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .blog-card-link::after { content: '→'; }
+    .blog-card-link:hover { color: var(--gold-light); }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-band {
+      padding: 5rem 3rem;
+      background: rgba(184,150,90,0.06);
+      border-top: 0.5px solid var(--border);
+      border-bottom: 0.5px solid var(--border);
+      text-align: center;
+    }
+    .newsletter-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .newsletter-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .newsletter-title em { font-style: italic; color: var(--gold-light); }
+    .newsletter-sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.8;
+    }
+    .newsletter-form {
+      display: flex;
+      gap: 0;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.9rem 1.25rem;
+      background: rgba(249,248,244,0.06);
+      border: 0.5px solid var(--border);
+      border-right: none;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .newsletter-form input::placeholder { color: var(--muted); }
+    .newsletter-form input:focus { border-color: rgba(184,150,90,0.5); }
+    .newsletter-form button {
+      padding: 0.9rem 1.5rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .newsletter-form button:hover { background: var(--gold-light); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.5rem 3rem;
+      border-top: 0.5px solid var(--border);
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold-light); }
+    .footer-copy { font-size: 0.65rem; color: var(--muted); letter-spacing: 0.08em; }
+
+    /* ===== WHATSAPP ===== */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      nav { padding: 1rem 2rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .blog-hero { padding: 5rem 2rem 3.5rem; }
+      .blog-categories { padding: 1.5rem 2rem; }
+      .featured-article { grid-template-columns: 1fr; }
+      .featured-img { min-height: 320px; }
+      .featured-content { padding: 3rem 2rem; }
+      .blog-section { padding: 4rem 2rem; }
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .newsletter-band { padding: 4rem 2rem; }
+      footer { padding: 2rem; }
+    }
+    @media (max-width: 640px) {
+      .blog-hero { padding: 4rem 1.5rem 3rem; }
+      .blog-categories { padding: 1.25rem 1.5rem; }
+      .blog-section { padding: 3rem 1.5rem; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .newsletter-band { padding: 3rem 1.5rem; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form input { border-right: 0.5px solid var(--border); border-bottom: none; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="nav-links" aria-label="Navigation principale">
+      <li class="nav-dropdown">
+        <a href="index.html#destinations">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="guadeloupe.html">Guadeloupe</a>
+          <a href="martinique.html">Martinique</a>
+          <a href="dominique.html">Dominique</a>
+          <a href="les-grenadines.html">Les Grenadines</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="index.html#themes">Séjours à thème</a>
+        <div class="dropdown-menu">
+          <a href="voyages-de-noce.html">Voyages de noce</a>
+          <a href="en-famille.html">En famille</a>
+          <a href="evjf-aux-antilles.html">EVJF aux Antilles</a>
+          <a href="seminaire-incentive.html">Séminaire incentive</a>
+        </div>
+      </li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Changer de langue">
+      <a href="blog.html" class="lang-active" hreflang="fr" aria-current="true">FR</a>
+      <span>|</span>
+      <a href="en/index.html" hreflang="en">EN</a>
+    </div>
+    <button class="nav-cta" onclick="window.location='index.html#contact'">Demander un devis</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="index.html#destinations" onclick="closeMenu()">Destinations</a>
+    <a href="index.html#themes" onclick="closeMenu()">Séjours à thème</a>
+    <a href="a-propos.html" onclick="closeMenu()">À propos</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+    <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="blog-hero reveal">
+    <p class="blog-hero-eyebrow">Inspirations & Conseils</p>
+    <h1>Le blog<br><em>Kudja Travel</em></h1>
+    <p class="blog-hero-sub">Itinéraires, bonnes adresses, conseils pratiques et coups de cœur pour préparer votre voyage sur-mesure aux Antilles.</p>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="blog-categories">
+    <button class="cat-btn active">Tous les articles</button>
+    <button class="cat-btn">Guadeloupe</button>
+    <button class="cat-btn">Martinique</button>
+    <button class="cat-btn">Dominique</button>
+    <button class="cat-btn">Les Grenadines</button>
+    <button class="cat-btn">Conseils pratiques</button>
+    <button class="cat-btn">Inspiration</button>
+  </div>
+
+  <!-- ARTICLE À LA UNE -->
+  <a href="blog-guadeloupe-itineraire.html" class="featured-article">
+    <div class="featured-img">
+      <img src="Guadeloupe.jpg" alt="Guadeloupe – plage et forêt tropicale" loading="eager" />
+    </div>
+    <div class="featured-content reveal">
+      <p class="article-tag">— À la une · Guadeloupe</p>
+      <h2>7 jours en Guadeloupe :<br><em>l'itinéraire parfait</em></h2>
+      <p class="article-excerpt">Du papillon de Grande-Terre aux pitons de Basse-Terre, de la Pointe des Châteaux aux Chutes du Carbet — comment tirer le meilleur d'une semaine sur l'île aux belles eaux. Hébergements coups de cœur, tables incontournables et plages secrètes.</p>
+      <div class="article-meta">
+        <div class="article-meta-item">Par <span>Mégane</span></div>
+        <div class="article-meta-item"><span>15 mars 2026</span></div>
+        <div class="article-meta-item"><span>8 min</span> de lecture</div>
+      </div>
+      <span class="btn-read">Lire l'article</span>
+    </div>
+  </a>
+
+  <!-- GRILLE D'ARTICLES -->
+  <section class="blog-section" aria-labelledby="blog-grid-title">
+    <div class="blog-section-header reveal">
+      <div>
+        <p class="section-label">Tous les articles</p>
+        <h2 class="section-title" id="blog-grid-title">Explorez nos <em>carnets de voyage</em></h2>
+      </div>
+    </div>
+
+    <div class="blog-grid">
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="Martinique.webp" alt="Martinique – côte sauvage" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Martinique</p>
+          <h3 class="blog-card-title">Martinique : les 5 plages que seuls les locaux connaissent</h3>
+          <p class="blog-card-excerpt">Loin des foules et des brochures, ces criques cachées et anses sauvages ne figurent dans aucun guide touristique.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">8 mars 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="Dominique.jpg" alt="Dominique – île nature" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Dominique</p>
+          <h3 class="blog-card-title">Dominique, l'île nature : pourquoi elle change tout</h3>
+          <p class="blog-card-excerpt">Volcans, sources chaudes et forêt vierge — la Dominique est l'antidote parfait au tourisme de masse.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">22 fév. 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="grenadines-Compress.jpg" alt="Les Grenadines – voilier" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Les Grenadines</p>
+          <h3 class="blog-card-title">Croisière aux Grenadines : tout ce qu'il faut savoir avant de partir</h3>
+          <p class="blog-card-excerpt">Catamaran ou voilier ? Avec skipper ou en autonomie ? On répond à toutes vos questions pour organiser la navigation parfaite.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">10 fév. 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="images/theme-noce.webp" alt="Voyage de noce aux Antilles" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Inspiration · Voyage de noce</p>
+          <h3 class="blog-card-title">Lune de miel aux Antilles : nos adresses romantiques incontournables</h3>
+          <p class="blog-card-excerpt">Villas privées avec piscine à débordement, dîners les pieds dans l'eau, excursions privées au lever du soleil.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">28 jan. 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="images/theme-famille.webp" alt="Famille aux Antilles" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Conseils pratiques · Famille</p>
+          <h3 class="blog-card-title">Partir aux Antilles avec des enfants : nos 10 conseils essentiels</h3>
+          <p class="blog-card-excerpt">Hébergements kid-friendly, activités adaptées, précautions santé, budget — tout ce qu'il faut préparer pour un séjour sans accroc.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">14 jan. 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <img src="images/theme-evjf.webp" alt="EVJF aux Antilles" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-tag">Inspiration · EVJF</p>
+          <h3 class="blog-card-title">EVJF en Guadeloupe : le programme idéal sur 4 jours</h3>
+          <p class="blog-card-excerpt">Plages paradisiaques, brunch au bord de l'eau, soirée cocktails et excursion en jet-ski — l'adieu au célibat dont vous rêvez.</p>
+          <div class="blog-card-footer">
+            <span class="blog-card-date">5 jan. 2026</span>
+            <span class="blog-card-link">Lire</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-band reveal">
+    <p class="newsletter-label">Restez inspiré(e)</p>
+    <h2 class="newsletter-title">Les Antilles dans<br><em>votre boîte mail</em></h2>
+    <p class="newsletter-sub">Conseils de saison, bons plans et nouvelles adresses — une newsletter par mois, sans spam.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)" novalidate>
+      <input type="email" placeholder="votre@email.com" required aria-label="Votre adresse email" />
+      <button type="submit">S'inscrire</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html" class="footer-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="footer-links" aria-label="Liens du site">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politiques-de-confidentialites.html">Confidentialité</a></li>
+      <li><a href="cgv.html">CGV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <script>
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      navMobile.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Newsletter
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Merci !';
+      btn.disabled = true;
+      setTimeout(() => { btn.textContent = "S'inscrire"; btn.disabled = false; e.target.reset(); }, 3000);
+    }
+
+    // Category filter (UI only — no real filtering needed for static site)
+    document.querySelectorAll('.cat-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

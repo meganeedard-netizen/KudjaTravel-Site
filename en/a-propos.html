@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Kudja Travel – Caribbean Travel Planner</title>
+  <meta name="description" content="Meet Mégane, travel planner specialising in the Caribbean. Based in Guadeloupe, she designs tailor-made trips to Guadeloupe, Martinique, Dominica and the Grenadines." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kudjatravel.com/en/a-propos.html" />
+  <link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos.html" />
+  <link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos.html" />
+  <link rel="alternate" hreflang="x-default" href="https://kudjatravel.com/a-propos.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kudjatravel.com/en/a-propos.html" />
+  <meta property="og:title" content="About Mégane | Kudja Travel – Caribbean Travel Planner" />
+  <meta property="og:description" content="Based in Guadeloupe, Mégane designs tailor-made Caribbean trips built around your desires, pace and budget." />
+  <meta property="og:image" content="https://kudjatravel.com/images/hero.webp" />
+  <meta property="og:locale" content="en_GB" />
+
+  <link rel="icon" type="image/png" href="../Favicon_kudjatravel_512.png" />
+  <link rel="apple-touch-icon" href="../Favicon_kudjatravel_512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#0D0D0B; --gold:#B8965A; --gold-light:#D4AF6E; --cream:#F5F0E8; --sand:#C9B99A; --leaf:#3D5A3E; --muted:rgba(249,248,244,0.55); --border:rgba(201,185,154,0.2); --white:#FAFAF8; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== NAV ===== */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(13,13,11,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after { content: ''; display: inline-block; width: 4px; height: 4px; border-right: 0.5px solid currentColor; border-bottom: 0.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+    .dropdown-menu { position: absolute; top: 100%; left: 50%; background: rgba(13,13,11,0.97); backdrop-filter: blur(16px); border: 0.5px solid var(--border); min-width: 210px; padding: 1rem 0 0.4rem; opacity: 0; visibility: hidden; transform: translateX(-50%) translateY(4px); transition: opacity 0.22s, transform 0.22s, visibility 0.22s; pointer-events: none; }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+    .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+    .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .lang-switcher { display: flex; align-items: center; gap: 0; border: 0.5px solid var(--border); }
+    .lang-switcher a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 0.45rem 0.7rem; transition: color 0.2s, background 0.2s; }
+    .lang-switcher a:hover { color: var(--cream); }
+    .lang-switcher a.lang-active { color: var(--gold); background: rgba(184,150,90,0.1); }
+    .lang-switcher span { color: var(--border); font-size: 0.6rem; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 110; }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--cream); transition: all 0.3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-mobile a:hover { color: var(--gold-light); }
+    .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
+
+    /* ===== HERO ===== */
+    .hero { position: relative; height: 70vh; min-height: 480px; display: flex; align-items: flex-end; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('../images/hero-portrait.webp'); background-size: cover; background-position: center top; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,13,11,0.1) 0%, rgba(13,13,11,0.05) 30%, rgba(13,13,11,0.7) 70%, rgba(13,13,11,1) 100%); }
+    .hero-content { position: relative; z-index: 2; padding: 0 3rem 5rem; }
+    .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
+    .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; }
+
+    /* ===== INTRO ===== */
+    .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 0.5px solid var(--border); }
+    .intro-text-block { padding: 5rem 3rem; }
+    .intro-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+    .intro-body { font-size: 1rem; line-height: 1.9; color: var(--muted); margin-bottom: 1.25rem; }
+    .intro-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; font-weight: 300; color: var(--cream); line-height: 1.5; border-left: 1px solid var(--gold); padding-left: 1.5rem; margin: 2rem 0; }
+    .intro-photo { position: relative; overflow: hidden; min-height: 500px; }
+    .intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; position: absolute; inset: 0; }
+
+    /* ===== VALUES ===== */
+    .values-section { padding: 6rem 3rem; border-bottom: 0.5px solid var(--border); }
+    .values-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .values-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 3rem; }
+    .values-title em { font-style: italic; color: var(--gold-light); }
+    .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); }
+    .value-item { background: var(--ink); padding: 2.5rem 2rem; }
+    .value-line { width: 24px; height: 0.5px; background: var(--gold); margin-bottom: 1rem; opacity: 0.6; }
+    .value-name { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--cream); margin-bottom: 0.6rem; }
+    .value-desc { font-size: 0.78rem; line-height: 1.75; color: var(--muted); }
+
+    /* ===== CTA ===== */
+    .cta-block { padding: 5rem 3rem; display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap; border-bottom: 0.5px solid var(--border); }
+    .cta-block-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--cream); line-height: 1.2; }
+    .cta-block-text em { font-style: italic; color: var(--gold-light); }
+    .btn-primary { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2rem; border: none; cursor: pointer; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: var(--gold-light); }
+
+    /* ===== FOOTER ===== */
+    footer { padding: 2.5rem 3rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.65rem; color: var(--muted); }
+
+    /* ===== WHATSAPP ===== */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      nav { padding: 1rem 2rem; } .nav-links, .nav-cta { display: none; } .nav-hamburger { display: flex; }
+      .intro { grid-template-columns: 1fr; }
+      .intro-photo { min-height: 360px; position: relative; order: -1; }
+      .intro-text-block { padding: 3.5rem 2rem; }
+      .values-section { padding: 4rem 2rem; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .cta-block { padding: 4rem 2rem; flex-direction: column; align-items: flex-start; }
+      footer { padding: 2rem; }
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: clamp(3rem, 14vw, 5rem); }
+      .values-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+      .hero-content { padding: 0 2rem 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/en/" class="nav-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="nav-links" aria-label="Main navigation">
+      <li class="nav-dropdown">
+        <a href="index.html#destinations">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="../guadeloupe.html">Guadeloupe</a>
+          <a href="../martinique.html">Martinique</a>
+          <a href="../dominique.html">Dominica</a>
+          <a href="../les-grenadines.html">The Grenadines</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="index.html#themes">Themed Trips</a>
+        <div class="dropdown-menu">
+          <a href="../voyages-de-noce.html">Honeymoons</a>
+          <a href="../en-famille.html">Family Trips</a>
+          <a href="../evjf-aux-antilles.html">Bachelorette</a>
+          <a href="../seminaire-incentive.html">Incentive Retreats</a>
+        </div>
+      </li>
+      <li><a href="a-propos.html" class="active">About</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Change language">
+      <a href="../a-propos.html" hreflang="fr">FR</a>
+      <span>|</span>
+      <a href="a-propos.html" class="lang-active" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="nav-cta" onclick="window.location='index.html#contact'">Get a quote</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile menu">
+    <a href="index.html#destinations" onclick="closeMenu()">Destinations</a>
+    <a href="index.html#themes" onclick="closeMenu()">Themed Trips</a>
+    <a href="a-propos.html" onclick="closeMenu()">About</a>
+    <a href="../blog.html" onclick="closeMenu()">Blog</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+    <a href="../a-propos.html" onclick="closeMenu()" style="font-size:1rem;color:var(--gold);">🇫🇷 Version française</a>
+    <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Get a quote</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Mégane, Kudja Travel planner"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">The face behind Kudja Travel</p>
+      <h1>Hello,<br>I'm Mégane!</h1>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <div class="intro-text-block">
+      <p class="intro-label">Travel Planner · Caribbean Specialist</p>
+      <p class="intro-body">Based in the Guadeloupe archipelago, I organise tailor-made self-drive tours for travellers who want to discover the islands differently — closer to nature and closer to the locals.</p>
+      <p class="intro-body">I find you the most authentic addresses at the best price, for truly unique memories under the tropical sun.</p>
+      <div class="intro-quote">"Whether you're travelling solo, as a couple, with family, with friends, as a works council or a company — let me surprise you by creating your perfect Caribbean itinerary."</div>
+      <p class="intro-body">I'd love to meet you over a video call — or a coffee — to help you plan your next adventure!</p>
+    </div>
+    <div class="intro-photo">
+      <img src="../PHOTOS/Mégane.png" alt="Mégane, Kudja Travel planner based in Guadeloupe" width="800" height="1000" />
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <p class="values-label">My commitments</p>
+    <h2 class="values-title">What guides<br><em>every trip</em></h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="value-line"></div>
+        <h3 class="value-name">Eco-tourism</h3>
+        <p class="value-desc">I work with local partners committed to sustainable, environmentally respectful practices. Every recommendation takes into account the impact on the islands I love.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-line"></div>
+        <h3 class="value-name">Listening to you</h3>
+        <p class="value-desc">Every travel project starts with a real conversation. I take the time to understand your wishes, your travel style, your budget — to build something that truly reflects you.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-line"></div>
+        <h3 class="value-name">Off the beaten track</h3>
+        <p class="value-desc">The addresses I select aren't the ones everyone already knows. My local network opens doors that booking platforms simply don't show.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-line"></div>
+        <h3 class="value-name">Total transparency</h3>
+        <p class="value-desc">Detailed quotes, clear pricing, explicit terms. You know exactly what you're paying for, what's included, and how the collaboration works — from the very first exchange.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <p class="cta-block-text">Ready to build<br><em>your trip together?</em></p>
+    <a href="index.html#contact" class="btn-primary">Get a free quote</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="/en/" class="footer-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="footer-links" aria-label="Site links">
+      <li><a href="../mentions-legales.html">Legal notice</a></li>
+      <li><a href="../politiques-de-confidentialites.html">Privacy</a></li>
+      <li><a href="../cgv.html">T&Cs</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="../a-propos.html">🇫🇷 Français</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/33659454184?text=Hello%20Mégane%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20the%20Caribbean%20with%20Kudja%20Travel!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact Kudja Travel on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    function closeMenu() { navMobile.classList.remove('open'); hamburger.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    hamburger.addEventListener('click', () => { const o = navMobile.classList.toggle('open'); hamburger.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO PRIMARY ===== -->
+  <title>Kudja Travel | Travel Planner Guadeloupe – Voyage Sur-Mesure aux Antilles</title>
+  <meta name="description" content="Kudja Travel, votre travel planner spécialiste des Antilles. Voyages 100% sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines. Itinéraires personnalisés, adresses locales exclusives, accompagnement 7j/7." />
+  <meta name="keywords" content="travel planner guadeloupe, voyage sur-mesure antilles, voyage guadeloupe, martinique, dominique grenadines, séjour antilles personnalisé, séjour luxe caraïbes" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kudjatravel.com/" />
+  <link rel="alternate" hreflang="fr" href="https://kudjatravel.com/" />
+  <link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://kudjatravel.com/" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kudjatravel.com/" />
+  <meta property="og:title" content="Kudja Travel | Voyage Sur-Mesure aux Antilles" />
+  <meta property="og:description" content="Travel planner spécialiste des Antilles. Voyages sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines. Experts locaux, adresses introuvables." />
+  <meta property="og:image" content="https://kudjatravel.com/images/hero.webp" />
+  <meta property="og:image:alt" content="Paysage des Antilles – Kudja Travel" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Kudja Travel" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kudja Travel | Voyage Sur-Mesure aux Antilles" />
+  <meta name="twitter:description" content="Travel planner spécialiste des Antilles — Guadeloupe, Martinique, Dominique, Grenadines." />
+  <meta name="twitter:image" content="https://kudjatravel.com/images/hero.webp" />
+
+  <!-- ===== SCHEMA.ORG ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Kudja Travel",
+    "description": "Travel planner spécialiste des Antilles — voyages sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines. Itinéraires personnalisés, adresses locales exclusives.",
+    "url": "https://kudjatravel.com",
+    "logo": "https://kudjatravel.com/images/hero.webp",
+    "image": "https://kudjatravel.com/images/hero.webp",
+    "telephone": "+33659454184",
+    "email": "contact@kudjatravel.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Guadeloupe",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Guadeloupe", "Martinique", "Dominique", "Grenadines"],
+    "priceRange": "€€€",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "sameAs": ["https://www.instagram.com/kudjatravel/"]
+  }
+  </script>
+
+  <!-- ===== PERFORMANCES ===== -->
+  <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
+  <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/hero.webp" />
+
+  <style>
+    /* ===========================
+       RESET & BASE
+    =========================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:        #0D0D0B;
+      --sand:       #C9B99A;
+      --sand-light: #E8DDD0;
+      --gold:       #B8965A;
+      --gold-light: #D4AF6E;
+      --cream:      #F5F0E8;
+      --leaf:       #3D5A3E;
+      --ocean:      #1A3A4A;
+      --white:      #FAFAF8;
+      --muted:      rgba(249,248,244,0.55);
+      --border:     rgba(201,185,154,0.2);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      background: var(--ink);
+      color: var(--white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===========================
+       NAVIGATION
+    =========================== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 3rem;
+      background: rgba(13,13,11,0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* Dropdown destinations */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after {
+      content: '';
+      display: inline-block;
+      width: 4px; height: 4px;
+      border-right: 0.5px solid currentColor;
+      border-bottom: 0.5px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform 0.2s;
+    }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      background: rgba(13,13,11,0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 0.5px solid var(--border);
+      min-width: 210px;
+      padding: 1rem 0 0.4rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-50%) translateY(4px);
+      transition: opacity 0.22s, transform 0.22s, visibility 0.22s;
+      pointer-events: none;
+    }
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+
+    .nav-cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--gold);
+      padding: 0.65rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold-light); }
+
+    .lang-switcher { display: flex; align-items: center; gap: 0; border: 0.5px solid var(--border); }
+    .lang-switcher a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 0.45rem 0.7rem; transition: color 0.2s, background 0.2s; }
+    .lang-switcher a:hover { color: var(--cream); }
+    .lang-switcher a.lang-active { color: var(--gold); background: rgba(184,150,90,0.1); }
+    .lang-switcher span { color: var(--border); font-size: 0.6rem; }
+
+    /* Hamburger */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+      z-index: 110;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--cream);
+      transition: all 0.3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* Mobile menu overlay */
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(13,13,11,0.97);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+    .nav-mobile a:hover { color: var(--gold-light); }
+    .nav-mobile .nav-mobile-cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--gold);
+      padding: 0.9rem 2.5rem;
+      margin-top: 1rem;
+    }
+
+    /* ===========================
+       HERO
+    =========================== */
+    .hero {
+      position: relative;
+      height: 95vh;
+      min-height: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/hero.webp');
+      background-size: cover;
+      background-position: center 30%;
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(13,13,11,0.25) 0%,
+        rgba(13,13,11,0.05) 25%,
+        rgba(13,13,11,0.65) 70%,
+        rgba(13,13,11,1) 100%
+      );
+    }
+
+    .hero-visual-block {
+      position: absolute;
+      right: 5%;
+      top: 8%;
+      width: 32%;
+      max-width: 420px;
+      height: 82%;
+      border-radius: 0 0 160px 0;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    }
+    .hero-visual-block img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .hero-visual-block::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 0 0 160px 0;
+      box-shadow: inset 0 0 0 1px rgba(184,150,90,0.15);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 3rem 5.5rem;
+      max-width: 700px;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem;
+      height: 0.5px;
+      background: var(--gold);
+    }
+
+    h1.hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+    }
+    h1.hero-title em { font-style: italic; color: var(--gold-light); }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: var(--muted);
+      max-width: 460px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      right: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 2;
+    }
+    .hero-scroll-hint span {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      writing-mode: vertical-rl;
+    }
+    .scroll-line {
+      width: 0.5px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+
+    /* ===========================
+       BOUTONS
+    =========================== */
+    .btn-primary {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--gold);
+      padding: 0.9rem 2rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold-light); }
+
+    .btn-ghost {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sand-light);
+      background: none;
+      border: 0.5px solid rgba(201,185,154,0.35);
+      padding: 0.9rem 2rem;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold-light); }
+
+    /* ===========================
+       STATS STRIP
+    =========================== */
+    .stats-strip {
+      border-top: 0.5px solid var(--border);
+      border-bottom: 0.5px solid var(--border);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: rgba(201,185,154,0.03);
+    }
+    .stat-item {
+      padding: 1.8rem 2rem;
+      border-right: 0.5px solid var(--border);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===========================
+       SECTIONS COMMUNES
+    =========================== */
+    .section { padding: 6rem 3rem; }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+    }
+    .section-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.1;
+    }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+
+    .section-link {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sand);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 0.5px solid rgba(201,185,154,0.3);
+      padding-bottom: 0.2rem;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .section-link:hover { color: var(--gold-light); border-color: var(--gold); }
+    .section-link::after { content: '→'; }
+
+    /* ===========================
+       DESTINATIONS
+    =========================== */
+    .destinations-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .dest-card {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dest-photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      aspect-ratio: 2/3;
+      margin-bottom: 1.25rem;
+      flex-shrink: 0;
+    }
+    .dest-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.7s ease;
+      display: block;
+    }
+    .dest-card:hover .dest-photo img { transform: scale(1.05); }
+
+    .dest-content { display: flex; flex-direction: column; gap: 0.6rem; }
+
+    .dest-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.1;
+    }
+    .dest-desc {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .dest-link {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.25rem;
+      transition: gap 0.2s;
+    }
+    .dest-link::after { content: '→'; }
+    .dest-card:hover .dest-link { gap: 0.75rem; }
+
+    /* ===========================
+       ABOUT
+    =========================== */
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 0.5px solid var(--border);
+      border-bottom: 0.5px solid var(--border);
+      background: rgba(201,185,154,0.025);
+    }
+    .about-visual {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+    }
+    .about-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      position: absolute;
+      inset: 0;
+    }
+    .about-visual-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,13,11,0.7) 0%, rgba(13,13,11,0.1) 60%);
+    }
+    .about-visual-caption {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 2.5rem;
+      right: 2.5rem;
+    }
+    .about-visual-caption .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.05em;
+    }
+    .about-visual-caption .role {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 0.3rem;
+    }
+    .about-gold-bar { width: 40px; height: 0.5px; background: var(--gold); margin-bottom: 0.75rem; }
+    .about-content { padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; }
+    .about-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.85rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.4;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+      border-left: 1px solid var(--gold);
+    }
+    .about-body {
+      font-size: 0.85rem;
+      line-height: 1.95;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+    .about-sig {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--gold);
+      margin-top: 0.5rem;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .about-sig:hover { color: var(--gold-light); }
+
+    /* ===========================
+       THÈMES
+    =========================== */
+    .themes-section { padding: 6rem 3rem; }
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .theme-card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    .theme-photo {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.7s ease;
+    }
+    .theme-card:hover .theme-photo { transform: scale(1.06); }
+
+    .theme-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,13,11,0.95) 0%, rgba(13,13,11,0.6) 50%, rgba(13,13,11,0.3) 100%);
+      transition: background 0.3s;
+    }
+    .theme-card:hover .theme-overlay {
+      background: linear-gradient(to top, rgba(13,13,11,0.92) 0%, rgba(13,13,11,0.5) 50%, rgba(13,13,11,0.2) 100%);
+    }
+
+    .theme-inner {
+      position: relative;
+      z-index: 2;
+      padding: 2.5rem 2rem;
+    }
+
+    .theme-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .theme-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-bottom: 1.25rem; opacity: 0.7; }
+    .theme-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .theme-desc {
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .theme-link {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.2s;
+    }
+    .theme-card:hover .theme-link { gap: 0.85rem; }
+    .theme-link::after { content: '→'; }
+
+    /* ===========================
+       POURQUOI KUDJA
+    =========================== */
+    .why-section { padding: 6rem 3rem; border-top: 0.5px solid var(--border); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      margin-top: 3rem;
+    }
+    .why-item { background: var(--ink); padding: 2.2rem 2rem; border: none; }
+    .why-item-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+    .why-item-desc { font-size: 0.78rem; line-height: 1.75; color: var(--muted); }
+    .why-line { width: 24px; height: 0.5px; background: var(--gold); margin-bottom: 1rem; opacity: 0.6; }
+
+    /* ===========================
+       COMMENT ÇA MARCHE
+    =========================== */
+    .how-section {
+      padding: 6rem 3rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 3.5rem;
+      background: var(--border);
+    }
+    .how-step {
+      background: var(--ink);
+      padding: 2.8rem 2.5rem;
+      position: relative;
+    }
+    .how-step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: rgba(184,150,90,0.12);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .how-step-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .how-step-desc {
+      font-size: 0.8rem;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+    .how-step-line {
+      width: 24px;
+      height: 0.5px;
+      background: var(--gold);
+      margin-bottom: 1.25rem;
+      opacity: 0.6;
+    }
+    .how-cta {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .how-note {
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ===========================
+       TÉMOIGNAGES
+    =========================== */
+    .reviews-section {
+      padding: 6rem 3rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .review-card {
+      background: rgba(201,185,154,0.04);
+      border: 0.5px solid var(--border);
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .review-stars {
+      display: flex;
+      gap: 0.2rem;
+    }
+    .review-stars span {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    .review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .review-author {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding-top: 1rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .review-name {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
+    .review-detail {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    /* ===========================
+       INSTAGRAM
+    =========================== */
+    .instagram-section {
+      padding: 6rem 3rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .instagram-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ===========================
+       WHATSAPP FLOTTANT
+    =========================== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      width: 54px;
+      height: 54px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+    }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ===========================
+       FAQ
+    =========================== */
+    .faq-section {
+      padding: 6rem 3rem;
+      border-top: 0.5px solid var(--border);
+      max-width: 860px;
+    }
+    .faq-item { border-bottom: 0.5px solid var(--border); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1.5rem 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--cream);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--gold-light); }
+    .faq-icon {
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 300;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      font-size: 0.83rem;
+      line-height: 1.85;
+      color: var(--muted);
+      padding: 0 0 1.5rem;
+      display: none;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ===========================
+       CTA BAND
+    =========================== */
+    .cta-band {
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 3rem;
+      text-align: center;
+      border-top: 0.5px solid rgba(61,90,62,0.4);
+      border-bottom: 0.5px solid rgba(61,90,62,0.4);
+    }
+    .cta-band-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/cta-bg.webp');
+      background-size: cover;
+      background-position: center;
+    }
+    .cta-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(13,42,26,0.92) 0%, rgba(13,13,11,0.88) 50%, rgba(26,42,13,0.90) 100%);
+    }
+    .cta-band > * { position: relative; z-index: 1; }
+    .cta-band-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .cta-band-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+    .cta-band-title em { font-style: italic; color: var(--gold-light); }
+    .cta-band-sub {
+      font-size: 0.87rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.85;
+    }
+    .cta-band-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ===========================
+       CONTACT
+    =========================== */
+    .contact-section {
+      padding: 5rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .contact-info-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
+    }
+    .contact-info-title em { font-style: italic; color: var(--gold-light); }
+    .contact-detail { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+    .contact-detail a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .contact-detail a:hover { color: var(--gold-light); }
+    .contact-detail-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      color: var(--cream);
+      background: rgba(201,185,154,0.05);
+      border: 0.5px solid rgba(201,185,154,0.2);
+      padding: 0.75rem 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select option { background: var(--ink); }
+    .form-group textarea { min-height: 100px; }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      padding: 3rem;
+      border-top: 0.5px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(249,248,244,0.35);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.65rem; color: rgba(249,248,244,0.2); letter-spacing: 0.05em; }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 1024px) {
+      nav { padding: 1rem 2rem; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .hero-visual-block { display: none; }
+      .hero-content { max-width: 100%; padding: 0 2rem 4rem; }
+
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+
+      .destinations-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+      .about-section { grid-template-columns: 1fr; }
+      .about-visual { min-height: 300px; }
+      .about-content { padding: 3rem 2rem; }
+
+      .themes-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .contact-section { grid-template-columns: 1fr; gap: 3rem; }
+
+      .section, .themes-section, .why-section, .faq-section { padding: 4rem 2rem; }
+      .cta-band { padding: 5rem 2rem; }
+      footer { padding: 2rem; }
+    }
+
+    @media (max-width: 640px) {
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .destinations-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .themes-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================
+       NAVIGATION
+  ========================= -->
+  <nav>
+    <a href="/" class="nav-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="nav-links" aria-label="Navigation principale">
+      <li class="nav-dropdown">
+        <a href="#destinations">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="guadeloupe.html">Guadeloupe</a>
+          <a href="martinique.html">Martinique</a>
+          <a href="dominique.html">Dominique</a>
+          <a href="les-grenadines.html">Les Grenadines</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#themes">Séjours à thème</a>
+        <div class="dropdown-menu">
+          <a href="voyages-de-noce.html">Voyages de noce</a>
+          <a href="en-famille.html">En famille</a>
+          <a href="evjf-aux-antilles.html">EVJF aux Antilles</a>
+          <a href="seminaire-incentive.html">Séminaire incentive</a>
+        </div>
+      </li>
+      <li><a href="#a-propos">À propos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Changer de langue">
+      <a href="/" class="lang-active" hreflang="fr" aria-current="true">FR</a>
+      <span>|</span>
+      <a href="/en/" hreflang="en">EN</a>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Demander un devis
+    </button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="#destinations" onclick="closeMenu()">Destinations</a>
+    <a href="#themes" onclick="closeMenu()">Séjours à thème</a>
+    <a href="voyages-de-noce.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Voyages de noce</a>
+    <a href="en-famille.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">En famille</a>
+    <a href="evjf-aux-antilles.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">EVJF aux Antilles</a>
+    <a href="seminaire-incentive.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Séminaire incentive</a>
+    <a href="#a-propos" onclick="closeMenu()">À propos</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <a href="#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
+  </nav>
+
+  <!-- ========================
+       HERO
+  ========================= -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Paysage des Antilles, îles de la Guadeloupe"></div>
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Travel Planner · Antilles</p>
+      <h1 class="hero-title">
+        Votre voyage<br>
+        <em>sur-mesure</em><br>
+        aux Antilles
+      </h1>
+      <p class="hero-sub">
+        Une experte locale, un itinéraire construit à votre image, des adresses introuvables dans les guides.
+        Guadeloupe, Martinique, Dominique, Grenadines.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Préparer mon voyage
+        </button>
+        <button class="btn-ghost" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+          Découvrir les destinations
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========================
+       STATS
+  ========================= -->
+  <div class="stats-strip" aria-label="Chiffres clés Kudja Travel">
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Destinations</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7+</div>
+      <div class="stat-label">Séjours à thème</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Sur-mesure</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7j/7</div>
+      <div class="stat-label">Disponibilité</div>
+    </div>
+  </div>
+
+  <!-- ========================
+       DESTINATIONS
+  ========================= -->
+  <section class="section" id="destinations" aria-labelledby="dest-title">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Nos destinations</p>
+        <h2 class="section-title" id="dest-title">Les îles que<br><em>nous faisons vivre</em></h2>
+      </div>
+      <a href="/destinations/" class="section-link">Toutes les destinations</a>
+    </div>
+
+    <div class="destinations-grid">
+
+      <a href="guadeloupe.html" class="dest-card">
+        <div class="dest-photo">
+          <img src="images/dest-guadeloupe.webp" alt="Guadeloupe — archipel des Antilles" width="300" height="450" loading="lazy" />
+        </div>
+        <div class="dest-content">
+          <h3 class="dest-name">Guadeloupe</h3>
+          <p class="dest-desc">Un archipel de 7 îles entre plages idylliques, forêt tropicale luxuriante, randonnée au volcan de la Soufrière et culture locale authentique.</p>
+          <span class="dest-link">En savoir plus</span>
+        </div>
+      </a>
+
+      <a href="martinique.html" class="dest-card">
+        <div class="dest-photo">
+          <img src="images/dest-martinique.webp" alt="Martinique — île des Caraïbes" width="600" height="900" loading="lazy" />
+        </div>
+        <div class="dest-content">
+          <h3 class="dest-name">Martinique</h3>
+          <p class="dest-desc">Le joyau des Caraïbes, séduit par ses plages tropicaux, son riche patrimoine culturel, ses distilleries de rhum et l'hospitalité créole.</p>
+          <span class="dest-link">En savoir plus</span>
+        </div>
+      </a>
+
+      <a href="dominique.html" class="dest-card">
+        <div class="dest-photo">
+          <img src="images/dest-dominique.webp" alt="Dominique — île nature des Caraïbes" width="300" height="450" loading="lazy" />
+        </div>
+        <div class="dest-content">
+          <h3 class="dest-name">Dominique</h3>
+          <p class="dest-desc">Une île préservée, envoûtée par ses paysages sauvages, ses sources chaudes et son doux rythme caribéen. La destination parfaite pour une aventure dépaysante.</p>
+          <span class="dest-link">En savoir plus</span>
+        </div>
+      </a>
+
+      <a href="les-grenadines.html" class="dest-card">
+        <div class="dest-photo">
+          <img src="images/dest-grenadines.webp" alt="Les Grenadines — voile et sérénité" width="300" height="450" loading="lazy" />
+        </div>
+        <div class="dest-content">
+          <h3 class="dest-name">Les Grenadines</h3>
+          <p class="dest-desc">Perles des Caraïbes aux eaux turquoise et sable blanc. Naviguez d'île en île, explorez les récifs coralliens et savourez les fruits de mer frais.</p>
+          <span class="dest-link">En savoir plus</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       À PROPOS — MÉGANE
+  ========================= -->
+  <section class="about-section" id="a-propos" aria-labelledby="about-title">
+    <div class="about-visual">
+      <img src="images/about-bg.webp"
+           alt="Paysage des Antilles — Kudja Travel, votre travel planner"
+           width="600" height="900"
+           loading="lazy" />
+      <div class="about-visual-overlay"></div>
+      <div class="about-visual-caption">
+        <div class="about-gold-bar"></div>
+        <div class="name">Mégane</div>
+        <div class="role">Travel Planner · Guadeloupe</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-label">L'experte derrière Kudja</p>
+      <blockquote class="about-quote">
+        « Les Antilles, ça ne se visite pas. Ça se vit, de l'intérieur. »
+      </blockquote>
+      <p class="about-body" id="about-title">
+        Installée en Guadeloupe, je crée des itinéraires aux antipodes du tourisme de masse. Chaque voyage est pensé pour vous — vos envies, votre rythme, votre budget — et s'appuie sur un réseau d'adresses locales soigneusement sélectionnées.
+      </p>
+      <p class="about-body">
+        De l'appel de découverte à votre carnet de voyage personnalisé, je reste votre contact unique, 7 jours sur 7, avant, pendant et après votre séjour.
+      </p>
+      <a href="/a-propos/" class="about-sig">En savoir plus →</a>
+    </div>
+  </section>
+
+  <!-- ========================
+       SÉJOURS À THÈME
+  ========================= -->
+  <section class="themes-section" id="themes" aria-labelledby="themes-title">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Séjours à thème</p>
+        <h2 class="section-title" id="themes-title">Voyagez selon<br><em>vos envies</em></h2>
+      </div>
+      <a href="/sejouratheme/" class="section-link">Tous les séjours</a>
+    </div>
+
+    <div class="themes-grid">
+
+      <a href="voyages-de-noce.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-evasion.webp');" role="img" aria-label="Voyages de noce aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">01</span>
+          <div class="theme-dot"></div>
+          <h3 class="theme-title">Voyages de noce</h3>
+          <p class="theme-desc">Hébergements romantiques, couchers de soleil, dîners les pieds dans l'eau. Un voyage construit pour deux.</p>
+          <span class="theme-link">Découvrir</span>
+        </div>
+      </a>
+
+      <a href="en-famille.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-famille.webp');" role="img" aria-label="Voyage en famille aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">02</span>
+          <div class="theme-dot"></div>
+          <h3 class="theme-title">En famille</h3>
+          <p class="theme-desc">Activités adaptées à tous les âges, logements sûrs, expériences locales mémorables pour petits et grands.</p>
+          <span class="theme-link">Découvrir</span>
+        </div>
+      </a>
+
+      <a href="evjf-aux-antilles.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-evjf.webp');" role="img" aria-label="EVJF aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">03</span>
+          <div class="theme-dot"></div>
+          <h3 class="theme-title">EVJF aux Antilles</h3>
+          <p class="theme-desc">Entre filles, entre soleil et cocktails tropicaux. Un dernier séjour de célibataire mémorable.</p>
+          <span class="theme-link">Découvrir</span>
+        </div>
+      </a>
+
+      <a href="seminaire-incentive.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-seminaire.webp');" role="img" aria-label="Séminaire incentive aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">04</span>
+          <div class="theme-dot"></div>
+          <h3 class="theme-title">Séminaire incentive</h3>
+          <p class="theme-desc">Teambuilding, venues exclusives, logistique complète. Un séjour professionnel hors du commun.</p>
+          <span class="theme-link">Découvrir</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       POURQUOI KUDJA
+  ========================= -->
+  <section class="why-section" aria-labelledby="why-title">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Nos engagements</p>
+        <h2 class="section-title" id="why-title">Pourquoi passer par<br><em>un travel planner ?</em></h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">Expertise locale</h3>
+        <p class="why-item-desc">Installée en Guadeloupe depuis des années, Mégane connaît les adresses que les guides ne mentionnent pas.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">Gain de temps</h3>
+        <p class="why-item-desc">Fini les heures passées sur les sites de réservation. Vous n'avez plus qu'à faire vos valises.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">100% sur-mesure</h3>
+        <p class="why-item-desc">Votre itinéraire est construit à votre image, jamais copié depuis une brochure.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">Éco-responsable</h3>
+        <p class="why-item-desc">Des partenaires engagés : écolodges, artisans locaux, excursions à faible impact environnemental.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">Zéro stress</h3>
+        <p class="why-item-desc">Un seul contact, disponible 7j/7, avant, pendant et après votre séjour.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-line"></div>
+        <h3 class="why-item-title">Roadbook personnalisé</h3>
+        <p class="why-item-desc">Votre carnet de voyage 100% personnalisé, livré 10 jours avant le départ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       COMMENT ÇA MARCHE
+  ========================= -->
+  <section class="how-section" aria-labelledby="how-title">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Le processus</p>
+        <h2 class="section-title" id="how-title">Comment ça<br><em>marche ?</em></h2>
+      </div>
+    </div>
+    <div class="how-steps">
+
+      <div class="how-step">
+        <span class="how-step-num">01</span>
+        <div class="how-step-line"></div>
+        <h3 class="how-step-title">On se parle</h3>
+        <p class="how-step-desc">Vous remplissez le formulaire et on se retrouve pour un appel de 30 minutes. Vous me parlez de vos envies, de votre budget, de votre façon de voyager. Pas d'engagement, juste une conversation.</p>
+      </div>
+
+      <div class="how-step">
+        <span class="how-step-num">02</span>
+        <div class="how-step-line"></div>
+        <h3 class="how-step-title">Je construis votre voyage</h3>
+        <p class="how-step-desc">Sous 72h, vous recevez un devis détaillé avec itinéraire, hébergements et activités sélectionnés pour vous. On ajuste ensemble jusqu'à ce que ce soit parfait. Votre carnet de voyage personnalisé vous est remis 10 jours avant le départ.</p>
+      </div>
+
+      <div class="how-step">
+        <span class="how-step-num">03</span>
+        <div class="how-step-line"></div>
+        <h3 class="how-step-title">Vous partez l'esprit libre</h3>
+        <p class="how-step-desc">Vous n'avez plus qu'à faire vos valises. Je reste disponible 7j/7 tout au long de votre séjour pour répondre à vos questions et vous orienter si besoin. Vous profitez, je gère.</p>
+      </div>
+
+    </div>
+    <div class="how-cta">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Commencer mon voyage</button>
+      <span class="how-note">Devis gratuit · Réponse sous 72h · Sans engagement</span>
+    </div>
+  </section>
+
+  <!-- ========================
+       CTA BAND
+  ========================= -->
+  <section class="cta-band">
+    <div class="cta-band-photo" role="img" aria-label="Paysage de la Grande-Terre, Guadeloupe"></div>
+    <div class="cta-band-overlay"></div>
+    <p class="cta-band-eyebrow">Votre voyage commence ici</p>
+    <h2 class="cta-band-title">
+      Planifions votre séjour<br>
+      <em>aux Antilles ensemble</em>
+    </h2>
+    <p class="cta-band-sub">Un appel de 30 minutes, un devis sous 72h. Pas d'engagement, pas de carte bancaire. Juste votre voyage de rêve.</p>
+    <div class="cta-band-actions">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Demander un devis gratuit
+      </button>
+      <a href="/services/" class="btn-ghost">Voir les services &amp; tarifs</a>
+    </div>
+  </section>
+
+  <!-- ========================
+       TÉMOIGNAGES
+  ========================= -->
+  <section class="reviews-section" aria-labelledby="reviews-title">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Ils sont partis avec Kudja</p>
+        <h2 class="section-title" id="reviews-title">Ce qu'ils<br><em>en disent</em></h2>
+      </div>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars"><span>★★★★★</span></div>
+        <p class="review-text">« Mégane a su capter exactement ce qu'on voulait dès le premier appel. Notre séjour en Guadeloupe était parfait — des adresses introuvables sur internet, une logistique sans accroc. On n'aurait jamais trouvé ça seuls. »</p>
+        <div class="review-author">
+          <span class="review-name">Sophie & Thomas</span>
+          <span class="review-detail">Voyage de noces · Guadeloupe</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★★★★★</span></div>
+        <p class="review-text">« On partait à 4 familles avec des enfants de 3 à 14 ans — un vrai défi. Mégane a construit un programme où tout le monde a trouvé son bonheur. Les enfants parlent encore du lagon de Petite-Terre. »</p>
+        <div class="review-author">
+          <span class="review-name">Camille R.</span>
+          <span class="review-detail">Voyage en famille · Guadeloupe & Martinique</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★★★★★</span></div>
+        <p class="review-text">« Notre EVJF aux Grenadines était tout simplement hors du commun. Catamaran privé, villa avec piscine, soirées mémorables. Tout était coordonné au millimètre. Merci Mégane pour ce séjour magique ! »</p>
+        <div class="review-author">
+          <span class="review-name">Léa & ses filles</span>
+          <span class="review-detail">EVJF · Grenadines</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       INSTAGRAM
+  ========================= -->
+  <section class="instagram-section" aria-labelledby="instagram-title">
+    <div class="instagram-header">
+      <div>
+        <p class="section-label">Instagram</p>
+        <h2 class="section-title" id="instagram-title">Suivez<br><em>l'aventure</em></h2>
+      </div>
+      <a href="https://www.instagram.com/kudjatravel/" target="_blank" rel="noopener" class="section-link">@kudjatravel</a>
+    </div>
+    <behold-widget feed-id="iw5x9NTL5R34Xfklypww"></behold-widget>
+    <script>
+      (() => {
+        const d=document,s=d.createElement("script");s.type="module";
+        s.src="https://w.behold.so/widget.js";d.head.append(s);
+      })();
+    </script>
+  </section>
+
+  <!-- ========================
+       FAQ
+  ========================= -->
+  <section class="faq-section" aria-labelledby="faq-title">
+    <p class="section-label">Questions fréquentes</p>
+    <h2 class="section-title" id="faq-title" style="margin-bottom:2.5rem;">Ce que vous voulez <em>savoir</em></h2>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        <span itemprop="name">Quelles sont les étapes pour faire appel à Kudja Travel ?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Prise de contact via le formulaire → Appel de découverte de 30 min → Envoi du devis sous 72h → Signature et règlement → Visio de validation → Envoi du carnet de voyage → Départ !</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        <span itemprop="name">Est-ce Kudja Travel qui effectue les réservations ?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Kudja Travel sélectionne les adresses et vous envoie les liens de réservation. Vous réglez directement avec les prestataires. Kudja Travel n'a pas le statut d'agent de voyage.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        <span itemprop="name">Gérez-vous les séjours de groupe (CSE, entreprise, EVJF…) ?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Oui, absolument. Séminaires, EVJF/EVG, anniversaires, voyages en famille ou entre amis — Kudja Travel s'adapte à tous les projets de groupe.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        <span itemprop="name">Combien coûtent les services de Kudja Travel ?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Kudja Travel propose plusieurs forfaits selon vos besoins. Retrouvez tous les tarifs sur la page Services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        <span itemprop="name">Que se passe-t-il en cas de problème pendant le séjour ?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Mégane reste joignable 7j/7 tout au long de votre séjour pour répondre à vos questions et vous orienter si besoin.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================
+       CONTACT
+  ========================= -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div>
+      <p class="section-label">Parlons de votre voyage</p>
+      <h2 class="contact-info-title" id="contact-title">
+        Prêt(e) à partir<br><em>aux Antilles ?</em>
+      </h2>
+      <div class="contact-detail">
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <a href="mailto:contact@kudjatravel.com">contact@kudjatravel.com</a>
+        </div>
+        <div>
+          <div class="contact-detail-label">Téléphone</div>
+          <a href="tel:+33659454184">+33 6 59 45 41 84</a>
+        </div>
+        <div>
+          <div class="contact-detail-label">Instagram</div>
+          <a href="https://www.instagram.com/kudjatravel/" target="_blank" rel="noopener noreferrer">@kudjatravel</a>
+        </div>
+      </div>
+      <p style="font-size:0.78rem;color:var(--muted);line-height:1.8;max-width:360px;">
+        « Je serais ravie de vous rencontrer autour d'un café ou derrière mon écran pour vous aider à préparer votre prochain voyage ! »
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);margin-top:0.75rem;">— Mégane</p>
+    </div>
+
+    <form class="contact-form" name="contact" method="POST" action="#" onsubmit="handleForm(event)" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom" autocomplete="given-name" />
+        </div>
+        <div class="form-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" name="nom" required placeholder="Votre nom" autocomplete="family-name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="votre@email.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+      </div>
+      <div class="form-group">
+        <label for="objet">Objet de votre demande *</label>
+        <select id="objet" name="objet" required>
+          <option value="" disabled selected>Choisir…</option>
+          <option value="sejour-carte">Séjour à la carte</option>
+          <option value="voyage-sur-mesure">Voyage sur-mesure</option>
+          <option value="voyage-groupe">Voyage de groupe</option>
+          <option value="voyage-entreprise">Voyage d'entreprise</option>
+          <option value="partenariat">Partenariat</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Parlez-moi de votre projet de voyage…"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="align-self:flex-start;margin-top:0.5rem;">
+        Envoyer ma demande
+      </button>
+    </form>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer>
+    <a href="/" class="footer-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="footer-links" aria-label="Liens légaux">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politiques-de-confidentialites.html">Confidentialité</a></li>
+      <li><a href="cgv.html">CGV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <!-- ========================
+       JS
+  ========================= -->
+  <script>
+    /* --- Mobile menu --- */
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      navMobile.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    /* --- FAQ accordion --- */
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    /* --- Form Formspree --- */
+    async function handleForm(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type="submit"]');
+      const original = btn.textContent;
+      btn.textContent = 'Envoi en cours…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('https://formspree.io/f/xjgpprao', {
+          method: 'POST',
+          body: new FormData(e.target),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          btn.textContent = 'Message envoyé ✓';
+          btn.style.background = '#3D5A3E';
+          e.target.reset();
+        } else {
+          btn.textContent = 'Erreur — réessayez';
+          btn.style.background = '#8B4444';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Erreur — réessayez';
+        btn.style.background = '#8B4444';
+        btn.disabled = false;
+      }
+    }
+
+    /* --- Scroll reveal --- */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.dest-card, .theme-card, .why-item, .stat-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
