@@ -221,7 +221,7 @@
     }
     .nav-logo span { color: var(--gold); }
 
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
     .nav-links a {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
@@ -258,14 +258,14 @@
       padding: 1rem 0 0.4rem;
       opacity: 0;
       visibility: hidden;
-      transform: translateX(-50%) translateY(4px);
+      transform: translateY(4px);
       transition: opacity 0.22s, transform 0.22s, visibility 0.22s;
       pointer-events: none;
     }
     .nav-dropdown:hover .dropdown-menu {
       opacity: 1;
       visibility: visible;
-      transform: translateX(-50%) translateY(0);
+      transform: translateY(0);
       pointer-events: auto;
     }
     .dropdown-menu a {
