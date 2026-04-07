@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Services | Kudja Travel – Travel Planner Antilles</title>
+  <meta name="description" content="Kudja Travel, structure indépendante fondée par Mégane Prieto-Blanco, spécialisée dans la production de séjours sur-mesure aux Antilles, le sourcing de prestataires locaux et l'organisation d'événements privés." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kudjatravel.com/services.html" />
+  <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
+  <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#0D0D0B; --gold:#B8965A; --gold-light:#D4AF6E; --cream:#F5F0E8; --sand:#C9B99A; --leaf:#3D5A3E; --muted:rgba(249,248,244,0.55); --border:rgba(201,185,154,0.2); --white:#FAFAF8; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(13,13,11,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after { content: ''; display: inline-block; width: 4px; height: 4px; border-right: 0.5px solid currentColor; border-bottom: 0.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+    .dropdown-menu { position: absolute; top: 100%; left: 50%; background: rgba(13,13,11,0.97); backdrop-filter: blur(16px); border: 0.5px solid var(--border); min-width: 210px; padding: 1rem 0 0.4rem; opacity: 0; visibility: hidden; transform: translateX(-50%) translateY(4px); transition: opacity 0.22s, transform 0.22s, visibility 0.22s; pointer-events: none; }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+    .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+    .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .lang-switcher { display: flex; align-items: center; gap: 0; border: 0.5px solid var(--border); }
+    .lang-switcher a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 0.45rem 0.7rem; transition: color 0.2s, background 0.2s; }
+    .lang-switcher a:hover { color: var(--cream); }
+    .lang-switcher a.lang-active { color: var(--gold); background: rgba(184,150,90,0.1); }
+    .lang-switcher span { color: var(--border); font-size: 0.6rem; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 110; }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--cream); transition: all 0.3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-mobile a:hover { color: var(--gold-light); }
+    .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
+
+    /* HERO */
+    .page-hero { padding: 7rem 3rem 5rem; border-bottom: 0.5px solid var(--border); }
+    .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+    .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
+    .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; }
+    .page-hero h1 em { font-style: italic; color: var(--gold-light); }
+    .page-hero-sub { font-size: 0.95rem; color: var(--muted); max-width: 560px; line-height: 1.85; }
+
+    /* PRÉSENTATION */
+    .presentation { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 0.5px solid var(--border); }
+    .presentation-text { padding: 5rem 3rem; }
+    .section-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 2rem; }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+    .body-text { font-size: 0.92rem; line-height: 1.9; color: var(--muted); margin-bottom: 1.25rem; }
+    .services-list { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 0.75rem; }
+    .services-list li { font-size: 0.88rem; line-height: 1.7; color: var(--muted); padding-left: 1.5rem; position: relative; }
+    .services-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+    .presentation-visual { position: relative; overflow: hidden; min-height: 480px; background: rgba(184,150,90,0.04); display: flex; align-items: center; justify-content: center; border-left: 0.5px solid var(--border); }
+    .presentation-quote { padding: 3rem; text-align: center; }
+    .quote-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-style: italic; font-weight: 300; color: var(--cream); line-height: 1.4; margin-bottom: 1.5rem; }
+    .quote-author { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+
+    /* ENGAGEMENTS */
+    .engagements-section { padding: 6rem 3rem; border-bottom: 0.5px solid var(--border); }
+    .engagements-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); margin-top: 3rem; }
+    .engagement-item { background: var(--ink); padding: 2.5rem 2rem; }
+    .engagement-number { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: rgba(184,150,90,0.15); line-height: 1; margin-bottom: 1rem; }
+    .engagement-line { width: 24px; height: 0.5px; background: var(--gold); margin-bottom: 1rem; opacity: 0.7; }
+    .engagement-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--cream); margin-bottom: 0.6rem; }
+    .engagement-desc { font-size: 0.78rem; line-height: 1.8; color: var(--muted); }
+
+    /* PROFIL */
+    .profile-section { padding: 6rem 3rem; border-bottom: 0.5px solid var(--border); display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: center; }
+    .profile-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+    .profile-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 0.5rem; }
+    .profile-role { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; }
+    .profile-stat { display: flex; align-items: baseline; gap: 0.75rem; padding: 1.25rem 0; border-bottom: 0.5px solid var(--border); }
+    .profile-stat:first-of-type { border-top: 0.5px solid var(--border); }
+    .profile-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--cream); line-height: 1; }
+    .profile-stat-label { font-size: 0.75rem; color: var(--muted); }
+
+    /* CTA */
+    .cta-block { padding: 6rem 3rem; display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap; background: rgba(184,150,90,0.04); border-bottom: 0.5px solid var(--border); }
+    .cta-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; color: var(--cream); line-height: 1.2; }
+    .cta-text em { font-style: italic; color: var(--gold-light); }
+    .btn-primary { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2rem; border: none; cursor: pointer; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    footer { padding: 2.5rem 3rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.65rem; color: var(--muted); }
+
+    /* WHATSAPP */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      nav { padding: 1rem 2rem; } .nav-links, .nav-cta { display: none; } .nav-hamburger { display: flex; }
+      .page-hero { padding: 5rem 2rem 3.5rem; }
+      .presentation { grid-template-columns: 1fr; }
+      .presentation-visual { min-height: 300px; border-left: none; border-top: 0.5px solid var(--border); }
+      .presentation-text { padding: 3.5rem 2rem; }
+      .engagements-section { padding: 4rem 2rem; }
+      .engagements-grid { grid-template-columns: 1fr 1fr; }
+      .profile-section { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 2rem; }
+      .cta-block { padding: 4rem 2rem; flex-direction: column; align-items: flex-start; }
+      footer { padding: 2rem; }
+    }
+    @media (max-width: 640px) {
+      .engagements-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="nav-links" aria-label="Navigation principale">
+      <li class="nav-dropdown">
+        <a href="index.html#destinations">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="guadeloupe.html">Guadeloupe</a>
+          <a href="martinique.html">Martinique</a>
+          <a href="dominique.html">Dominique</a>
+          <a href="les-grenadines.html">Les Grenadines</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="index.html#themes">Séjours à thème</a>
+        <div class="dropdown-menu">
+          <a href="voyages-de-noce.html">Voyages de noce</a>
+          <a href="en-famille.html">En famille</a>
+          <a href="evjf-aux-antilles.html">EVJF aux Antilles</a>
+          <a href="seminaire-incentive.html">Séminaire incentive</a>
+        </div>
+      </li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Changer de langue">
+      <a href="services.html" class="lang-active" hreflang="fr">FR</a>
+      <span>|</span>
+      <a href="en/index.html" hreflang="en">EN</a>
+    </div>
+    <button class="nav-cta" onclick="window.location='index.html#contact'">Demander un devis</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="index.html#destinations" onclick="closeMenu()">Destinations</a>
+    <a href="index.html#themes" onclick="closeMenu()">Séjours à thème</a>
+    <a href="a-propos.html" onclick="closeMenu()">À propos</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+    <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero reveal">
+    <p class="hero-eyebrow">Travel Planner · Guadeloupe</p>
+    <h1>Nos <em>services</em></h1>
+    <p class="page-hero-sub">Une structure indépendante spécialisée dans l'organisation de voyages sur-mesure et d'événements privés aux Antilles.</p>
+  </div>
+
+  <!-- PRÉSENTATION -->
+  <div class="presentation">
+    <div class="presentation-text reveal">
+      <p class="section-label">Qui sommes-nous</p>
+      <h2 class="section-title">Kudja Travel,<br><em>l'expertise locale</em></h2>
+      <p class="body-text">Fondée par <strong style="color:var(--cream)">Mégane Prieto-Blanco</strong>, professionnelle du tourisme depuis plus de 10 ans, Kudja Travel est une structure indépendante basée en Guadeloupe.</p>
+      <p class="body-text">Nous intervenons en tant que prestataire de services d'organisation d'expériences, de séjours et d'événements pour les particuliers et les professionnels.</p>
+      <p class="body-text">Nos domaines d'expertise :</p>
+      <ul class="services-list">
+        <li>La production de séjours sur-mesure aux Antilles</li>
+        <li>Le sourcing de prestataires locaux qualifiés</li>
+        <li>La coordination opérationnelle sur place</li>
+        <li>L'organisation d'événements privés</li>
+      </ul>
+    </div>
+    <div class="presentation-visual reveal">
+      <div class="presentation-quote">
+        <p class="quote-text">« Les plus beaux voyages sont ceux qui vous ressemblent vraiment. »</p>
+        <p class="quote-author">— Mégane Prieto-Blanco, fondatrice</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENTS -->
+  <section class="engagements-section reveal">
+    <p class="section-label">Ce qui nous définit</p>
+    <h2 class="section-title">Nos <em>engagements</em></h2>
+    <div class="engagements-grid">
+
+      <div class="engagement-item">
+        <div class="engagement-number">01</div>
+        <div class="engagement-line"></div>
+        <h3 class="engagement-name">Originalité</h3>
+        <p class="engagement-desc">Création d'expériences immersives et authentiques, loin des circuits standardisés et des brochures généralistes.</p>
+      </div>
+
+      <div class="engagement-item">
+        <div class="engagement-number">02</div>
+        <div class="engagement-line"></div>
+        <h3 class="engagement-name">Qualité</h3>
+        <p class="engagement-desc">Sélection rigoureuse des prestataires locaux — chaque adresse recommandée est personnellement testée et validée.</p>
+      </div>
+
+      <div class="engagement-item">
+        <div class="engagement-number">03</div>
+        <div class="engagement-line"></div>
+        <h3 class="engagement-name">Réactivité</h3>
+        <p class="engagement-desc">Interlocutrice unique, réponse rapide aux demandes et présence sur place en cas d'urgence tout au long de votre séjour.</p>
+      </div>
+
+      <div class="engagement-item">
+        <div class="engagement-number">04</div>
+        <div class="engagement-line"></div>
+        <h3 class="engagement-name">Tourisme responsable</h3>
+        <p class="engagement-desc">Collaboration avec des acteurs engagés dans des pratiques durables et respectueuses des territoires insulaires.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFIL FONDATRICE -->
+  <section class="profile-section reveal">
+    <div>
+      <p class="profile-label">La fondatrice</p>
+      <h2 class="profile-name">Mégane<br>Prieto-Blanco</h2>
+      <p class="profile-role">Travel Planner · Guadeloupe</p>
+      <div class="profile-stat">
+        <span class="profile-stat-num">10+</span>
+        <span class="profile-stat-label">ans d'expérience dans le tourisme</span>
+      </div>
+      <div class="profile-stat">
+        <span class="profile-stat-num">4</span>
+        <span class="profile-stat-label">destinations maîtrisées aux Antilles</span>
+      </div>
+      <div class="profile-stat">
+        <span class="profile-stat-num">7j/7</span>
+        <span class="profile-stat-label">disponibilité avant, pendant et après</span>
+      </div>
+    </div>
+    <div>
+      <p class="body-text">Installée en Guadeloupe, Mégane organise des autotours sur-mesure pour tout voyageur souhaitant découvrir les îles autrement — au plus proche de la nature et des locaux.</p>
+      <p class="body-text">Que vous soyez seul(e), en couple, en famille, entre amis, un CSE ou bien une entreprise, Kudja Travel s'adapte à chaque projet avec la même exigence et la même passion.</p>
+      <p class="body-text">Chaque voyage est unique parce que chaque client l'est. L'objectif n'est pas de vous vendre un séjour — c'est de vous faire vivre une expérience dont vous vous souviendrez longtemps.</p>
+      <a href="a-propos.html" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:1.5rem;transition:color 0.2s;">En savoir plus sur Mégane →</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-block reveal">
+    <p class="cta-text">Parlons de<br><em>votre projet</em></p>
+    <a href="index.html#contact" class="btn-primary">Demander un devis gratuit</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html" class="footer-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="footer-links">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politiques-de-confidentialites.html">Confidentialité</a></li>
+      <li><a href="cgv.html">CGV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    function closeMenu() { navMobile.classList.remove('open'); hamburger.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    hamburger.addEventListener('click', () => { const o = navMobile.classList.toggle('open'); hamburger.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; });
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);} }), {threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
