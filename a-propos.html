@@ -54,14 +54,12 @@
     .nav-mobile a:hover { color: var(--gold-light); }
     .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
 
-    /* HERO */
-    .hero { position: relative; height: 70vh; min-height: 480px; display: flex; align-items: flex-end; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background-image: url('images/hero-portrait.webp'); background-size: cover; background-position: center top; }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,13,11,0.1) 0%, rgba(13,13,11,0.05) 30%, rgba(13,13,11,0.7) 70%, rgba(13,13,11,1) 100%); }
-    .hero-content { position: relative; z-index: 2; padding: 0 3rem 5rem; }
+    /* PAGE HEADER */
+    .page-header { padding: 6rem 3rem 4rem; border-bottom: 0.5px solid var(--border); }
     .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; }
+    @media (max-width: 640px) { .page-header { padding: 4rem 2rem 3rem; } }
 
     /* INTRO */
     .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 0.5px solid var(--border); }
@@ -171,14 +169,10 @@
     <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
   </nav>
 
-  <section class="hero">
-    <div class="hero-bg" role="img" aria-label="Mégane, travel planner Kudja Travel"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Qui se cache derrière Kudja Travel ?</p>
-      <h1>Hello, moi<br>c'est Mégane !</h1>
-    </div>
-  </section>
+  <div class="page-header">
+    <p class="hero-eyebrow">Qui se cache derrière Kudja Travel ?</p>
+    <h1>Hello, moi<br>c'est Mégane !</h1>
+  </div>
 
   <div class="intro">
     <div class="intro-text-block">
