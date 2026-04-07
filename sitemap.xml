@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage FR -->
+  <url>
+    <loc>https://kudjatravel.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Homepage EN -->
+  <url>
+    <loc>https://kudjatravel.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- À propos FR -->
+  <url>
+    <loc>https://kudjatravel.com/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos.html"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About EN -->
+  <url>
+    <loc>https://kudjatravel.com/en/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos.html"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Destinations -->
+  <url>
+    <loc>https://kudjatravel.com/guadeloupe.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/martinique.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/dominique.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/les-grenadines.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Séjours à thème -->
+  <url>
+    <loc>https://kudjatravel.com/voyages-de-noce.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/en-famille.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/evjf-aux-antilles.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/seminaire-incentive.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://kudjatravel.com/blog.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/blog-guadeloupe-itineraire.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pages légales -->
+  <url>
+    <loc>https://kudjatravel.com/mentions-legales.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/politiques-de-confidentialites.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/cgv.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

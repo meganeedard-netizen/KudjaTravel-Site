@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer les pages légales des moteurs de recherche
+Disallow: /mentions-legales.html
+Disallow: /politiques-de-confidentialites.html
+Disallow: /cgv.html
+
+Sitemap: https://kudjatravel.com/sitemap.xml
