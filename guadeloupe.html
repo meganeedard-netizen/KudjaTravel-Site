@@ -53,6 +53,16 @@
     .nav-logo-img { display: inline-block; height: 26px; width: auto; filter: brightness(0) invert(1); margin-right: 0.55rem; vertical-align: middle; }
     .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
     .nav-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after { content: ''; display: inline-block; width: 4px; height: 4px; border-right: 0.5px solid currentColor; border-bottom: 0.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+    .dropdown-menu { position: absolute; top: 100%; left: 0; background: rgba(13,13,11,0.97); backdrop-filter: blur(16px); border: 0.5px solid var(--border); min-width: 210px; padding: 1rem 0 0.4rem; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity 0.22s, transform 0.22s, visibility 0.22s; pointer-events: none; z-index: 200; }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+    .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
     .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
     .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
     .nav-cta:hover { background: var(--gold-light); }
