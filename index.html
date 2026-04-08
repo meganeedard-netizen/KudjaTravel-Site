@@ -667,12 +667,22 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       border-top: 0.5px solid var(--border);
-      border-bottom: 0.5px solid var(--border);
       background: rgba(201,185,154,0.025);
+      position: relative;
+    }
+    .about-section::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 480px;
+      height: 0.5px;
+      background: var(--border);
     }
     .about-visual {
       position: relative;
-      min-height: 560px;
+      min-height: 380px;
+      max-height: 480px;
       overflow: hidden;
     }
     .about-visual img {
@@ -712,7 +722,7 @@
     .about-content { padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; }
     .about-quote {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.85rem;
+      font-size: 1.35rem;
       font-weight: 300;
       font-style: italic;
       color: var(--cream);
@@ -1204,7 +1214,7 @@
       .destinations-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 
       .about-section { grid-template-columns: 1fr; }
-      .about-visual { min-height: 300px; }
+      .about-visual { min-height: 240px; max-height: none; }
       .about-content { padding: 3rem 2rem; }
 
       .themes-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1256,6 +1266,7 @@
         </div>
       </li>
       <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -1281,6 +1292,7 @@
     <a href="evjf-aux-antilles.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">EVJF aux Antilles</a>
     <a href="seminaire-incentive.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Séminaire incentive</a>
     <a href="a-propos.html" onclick="closeMenu()">À propos</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
     <a href="blog.html" onclick="closeMenu()">Blog</a>
     <a href="#contact" onclick="closeMenu()">Contact</a>
     <a href="#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
@@ -1408,7 +1420,7 @@
   ========================= -->
   <section class="about-section" id="a-propos" aria-labelledby="about-title">
     <div class="about-visual">
-      <img src="images/megane-travel-planner-guadeloupe.jpg"
+      <img src="images/megane-travel-planner-guadeloupe.webp"
            alt="Mégane, travel planner Kudja Travel en Guadeloupe"
            width="900" height="600"
            loading="lazy" />
@@ -1449,7 +1461,7 @@
     <div class="themes-grid">
 
       <a href="voyages-de-noce.html" class="theme-card">
-        <div class="theme-photo" style="background-image:url('images/theme-voyage-noce.jpg');" role="img" aria-label="Voyages de noce aux Antilles"></div>
+        <div class="theme-photo" style="background-image:url('images/theme-voyage-noce.webp');" role="img" aria-label="Voyages de noce aux Antilles"></div>
         <div class="theme-overlay"></div>
         <div class="theme-inner">
           <span class="theme-number">01</span>
@@ -1461,7 +1473,7 @@
       </a>
 
       <a href="en-famille.html" class="theme-card">
-        <div class="theme-photo" style="background-image:url('images/famille-plage.jpg');" role="img" aria-label="Voyage en famille aux Antilles"></div>
+        <div class="theme-photo" style="background-image:url('images/famille-plage.webp');" role="img" aria-label="Voyage en famille aux Antilles"></div>
         <div class="theme-overlay"></div>
         <div class="theme-inner">
           <span class="theme-number">02</span>
@@ -1473,7 +1485,7 @@
       </a>
 
       <a href="evjf-aux-antilles.html" class="theme-card">
-        <div class="theme-photo" style="background-image:url('images/theme-evjf-antilles.jpg');" role="img" aria-label="EVJF aux Antilles"></div>
+        <div class="theme-photo" style="background-image:url('images/theme-evjf-antilles.webp');" role="img" aria-label="EVJF aux Antilles"></div>
         <div class="theme-overlay"></div>
         <div class="theme-inner">
           <span class="theme-number">03</span>

@@ -14,14 +14,14 @@
   <meta property="og:url" content="https://kudjatravel.com/a-propos/" />
   <meta property="og:title" content="À propos | Kudja Travel – Travel Planner Antilles" />
   <meta property="og:description" content="Mégane, travel planner spécialiste des Antilles, crée des voyages sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines." />
-  <meta property="og:image" content="https://kudjatravel.com/images/megane-travel-planner-guadeloupe.jpg" />
+  <meta property="og:image" content="https://kudjatravel.com/images/megane-travel-planner-guadeloupe.webp" />
   <meta property="og:image:alt" content="Mégane Prieto-Blanco, travel planner Kudja Travel en Guadeloupe" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Kudja Travel" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="À propos | Kudja Travel – Travel Planner Antilles" />
   <meta name="twitter:description" content="Mégane, travel planner spécialiste des Antilles, crée des voyages sur-mesure en Guadeloupe, Martinique, Dominique et Grenadines." />
-  <meta name="twitter:image" content="https://kudjatravel.com/images/megane-travel-planner-guadeloupe.jpg" />
+  <meta name="twitter:image" content="https://kudjatravel.com/images/megane-travel-planner-guadeloupe.webp" />
   <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
   <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,20 +73,20 @@
     .page-header { padding: 6rem 3rem 4rem; border-bottom: 0.5px solid var(--border); }
     .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
-    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 300; color: var(--cream); line-height: 1.1; }
     @media (max-width: 640px) { .page-header { padding: 4rem 2rem 3rem; } }
 
     /* INTRO */
     .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 0.5px solid var(--border); }
-    .intro-text-block { padding: 5rem 3rem; }
+    .intro-text-block { padding: 3rem 3rem; }
     .intro-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
     .intro-body { font-size: 1rem; line-height: 1.9; color: var(--muted); margin-bottom: 1.25rem; }
     .intro-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; font-weight: 300; color: var(--cream); line-height: 1.5; border-left: 1px solid var(--gold); padding-left: 1.5rem; margin: 2rem 0; }
-    .intro-photo { position: relative; overflow: hidden; min-height: 500px; }
+    .intro-photo { position: relative; overflow: hidden; min-height: 360px; max-height: 480px; }
     .intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; position: absolute; inset: 0; }
 
     /* VALEURS */
-    .values-section { padding: 6rem 3rem; border-bottom: 0.5px solid var(--border); }
+    .values-section { padding: 3.5rem 3rem; border-bottom: 0.5px solid var(--border); }
     .values-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .values-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 3rem; }
     .values-title em { font-style: italic; color: var(--gold-light); }
@@ -122,7 +122,7 @@
     @media (max-width: 1024px) {
       nav { padding: 1rem 2rem; } .nav-links, .nav-cta { display: none; } .nav-hamburger { display: flex; }
       .intro { grid-template-columns: 1fr; }
-      .intro-photo { min-height: 360px; position: relative; order: -1; }
+      .intro-photo { min-height: 280px; max-height: none; position: relative; order: -1; }
       .intro-text-block { padding: 3.5rem 2rem; }
       .values-section { padding: 4rem 2rem; }
       .values-grid { grid-template-columns: 1fr 1fr; }
@@ -160,6 +160,7 @@
         </div>
       </li>
       <li><a href="a-propos.html" style="color:var(--gold-light);">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
@@ -179,6 +180,7 @@
     <a href="evjf-aux-antilles.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">EVJF aux Antilles</a>
     <a href="seminaire-incentive.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Séminaire incentive</a>
     <a href="a-propos.html" onclick="closeMenu()">À propos</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
     <a href="blog.html" onclick="closeMenu()">Blog</a>
     <a href="index.html#contact" onclick="closeMenu()">Contact</a>
     <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
@@ -186,7 +188,7 @@
 
   <div class="page-header">
     <p class="hero-eyebrow">Qui se cache derrière Kudja Travel ?</p>
-    <h1>Hello, moi<br>c'est Mégane !</h1>
+    <h1>Hello, moi c'est Mégane !</h1>
   </div>
 
   <div class="intro">
@@ -195,11 +197,10 @@
       <p class="intro-body">Vivant sur l'archipel de la Guadeloupe, et voyageant régulièrement aux Antilles, j'organise des séjours sur-mesure pour tout voyageur souhaitant découvrir les îles autrement, au plus proche de la nature et des locaux.</p>
       <p class="intro-body">Je recherche pour vous les adresses les plus authentiques au meilleur prix, pour des souvenirs uniques sous les tropiques.</p>
       <div class="intro-quote">« Que vous soyez seul(e), en couple, en famille, entre amis, un CSE ou bien une entreprise, laissez-moi vous surprendre en me confiant la création de votre itinéraire aux Antilles. »</div>
-      <p class="intro-body">Je serais ravie de vous rencontrer autour d'un café ou derrière mon écran pour vous aider à préparer votre prochain voyage !</p>
-      <p class="intro-body">J'exerce mon activité de travel planner et d'organisatrice d'événements avec une assurance Responsabilité Civile Professionnelle souscrite auprès de Hiscox, couvrant les éventuels dommages causés à mes clients dans le cadre de mes prestations.</p>
+      <p class="intro-body">Je serais ravie d'échanger avec vous, autour d'un café ou bien en visio, pour imaginer ensemble un voyage à votre image !</p>
     </div>
     <div class="intro-photo">
-      <img src="images/megane-travel-planner-guadeloupe.jpg" alt="Mégane, travel planner Kudja Travel en Guadeloupe" width="900" height="600" />
+      <img src="images/megane-travel-planner-guadeloupe.webp" alt="Mégane, travel planner Kudja Travel en Guadeloupe" width="900" height="600" />
     </div>
   </div>
 
