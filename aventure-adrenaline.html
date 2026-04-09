@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voyages de Noce aux Antilles | Kudja Travel</title>
-  <meta name="description" content="Organisez votre voyage de noces aux Antilles avec Kudja Travel. Hébergements romantiques, couchers de soleil, dîners les pieds dans l'eau. Guadeloupe, Martinique, Dominique, Grenadines." />
+  <title>Séjour Aventure & Adrénaline aux Antilles | Kudja Travel</title>
+  <meta name="description" content="Surf, kitesurf, parapente, canyoning, VTT : un séjour aux Antilles pour les amateurs de sensations fortes et d'aventure en pleine nature tropicale." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kudjatravel.com/voyages-de-noce/" />
-  <link rel="alternate" hreflang="fr" href="https://kudjatravel.com/voyages-de-noce/" />
-  <link rel="alternate" hreflang="x-default" href="https://kudjatravel.com/voyages-de-noce/" />
-  <meta property="og:title" content="Voyages de Noce | Kudja Travel – Antilles Sur-Mesure" />
-  <meta property="og:description" content="Un voyage de noces inoubliable aux Antilles. Hébergements romantiques, expériences exclusives, tout organisé pour vous." />
-  <meta property="og:image" content="https://kudjatravel.com/images/theme-evasion.webp" />
-  <meta property="og:image:alt" content="Voyage de noces romantique aux Antilles – Kudja Travel" />
-  <meta property="og:url" content="https://kudjatravel.com/voyages-de-noce/" />
+  <link rel="canonical" href="https://kudjatravel.com/aventure-adrenaline/" />
+  <link rel="alternate" hreflang="fr" href="https://kudjatravel.com/aventure-adrenaline/" />
+  <link rel="alternate" hreflang="x-default" href="https://kudjatravel.com/aventure-adrenaline/" />
+  <meta property="og:title" content="Séjour Aventure & Adrénaline aux Antilles | Kudja Travel" />
+  <meta property="og:description" content="Surf, kitesurf, parapente, canyoning, VTT : vivez les Antilles à fond avec Kudja Travel." />
+  <meta property="og:image" content="https://kudjatravel.com/images/aventure-hero.webp" />
+  <meta property="og:image:alt" content="Coucher de soleil en Martinique, aventure et adrénaline aux Antilles" />
+  <meta property="og:url" content="https://kudjatravel.com/aventure-adrenaline/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Kudja Travel" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Voyages de Noce | Kudja Travel – Antilles Sur-Mesure" />
-  <meta name="twitter:description" content="Un voyage de noces inoubliable aux Antilles. Hébergements romantiques, expériences exclusives, tout organisé pour vous." />
-  <meta name="twitter:image" content="https://kudjatravel.com/images/theme-evasion.webp" />
+  <meta name="twitter:title" content="Séjour Aventure & Adrénaline aux Antilles | Kudja Travel" />
+  <meta name="twitter:description" content="Surf, kitesurf, parapente, canyoning, VTT : vivez les Antilles à fond." />
+  <meta name="twitter:image" content="https://kudjatravel.com/images/aventure-hero.webp" />
   <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
   <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="images/theme-evasion.webp" />
+  <link rel="preload" as="image" href="images/aventure-hero.webp" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --ink:#0D0D0B; --gold:#B8965A; --gold-light:#D4AF6E; --cream:#F5F0E8; --sand:#C9B99A; --sand-light:#E8DDD0; --muted:rgba(249,248,244,0.55); --border:rgba(201,185,154,0.2); --white:#FAFAF8; }
@@ -34,6 +34,8 @@
     body { font-family: 'DM Sans', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1.6; }
     img { display: block; max-width: 100%; }
     a { text-decoration: none; color: inherit; }
+
+    /* ===== NAV ===== */
     nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2rem; background: rgba(13,13,11,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 0.5px solid var(--border); }
     .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
     .nav-logo span { color: var(--gold); }
@@ -51,6 +53,7 @@
     .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
     .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
     .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+    .dropdown-menu a.active { color: var(--gold-light); }
     .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
     .nav-cta:hover { background: var(--gold-light); }
     .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 110; }
@@ -58,22 +61,28 @@
     .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; overflow-y: auto; padding: 2rem 0; }
     .nav-mobile.open { display: flex; }
     .nav-mobile a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); letter-spacing: 0.08em; transition: color 0.2s; }
     .nav-mobile a:hover { color: var(--gold-light); }
     .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
+
+    /* ===== HERO ===== */
     .hero { position: relative; height: 90vh; min-height: 580px; display: flex; align-items: flex-end; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background-image: url('images/theme-evasion.webp'); background-size: cover; background-position: center; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('images/aventure-hero.webp'); background-size: cover; background-position: center 50%; }
     .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,13,11,0.2) 0%, rgba(13,13,11,0.1) 30%, rgba(13,13,11,0.75) 70%, rgba(13,13,11,1) 100%); }
     .hero-content { position: relative; z-index: 2; padding: 0 3rem 5rem; }
     .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; letter-spacing: -0.01em; }
+
+    /* ===== INTRO ===== */
     .intro-section { padding: 5rem 3rem; border-bottom: 0.5px solid var(--border); max-width: 860px; }
     .intro-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
     .intro-text { font-size: 1rem; line-height: 1.9; color: var(--muted); margin-bottom: 1rem; }
     .intro-transition { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; font-weight: 300; color: var(--cream); margin-top: 1.5rem; }
+
+    /* ===== HIGHLIGHTS ===== */
     .highlights { padding: 0 3rem 5rem; }
     .highlight { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 0.5px solid var(--border); min-height: 420px; }
     .highlight:nth-child(even) { direction: rtl; }
@@ -86,6 +95,8 @@
     .highlight-name { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 1rem; }
     .highlight-desc { font-size: 0.85rem; line-height: 1.85; color: var(--muted); }
     .highlight-line { width: 32px; height: 0.5px; background: var(--gold); margin-bottom: 1.25rem; opacity: 0.6; }
+
+    /* ===== CONTACT ===== */
     .contact-section { padding: 5rem 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; border-top: 0.5px solid var(--border); }
     .contact-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
     .contact-title { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 1.5rem; }
@@ -104,6 +115,8 @@
     .form-group textarea { min-height: 100px; }
     .btn-primary { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2rem; border: none; cursor: pointer; transition: background 0.2s; }
     .btn-primary:hover { background: var(--gold-light); }
+
+    /* ===== FOOTER ===== */
     .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s, box-shadow 0.2s; }
     .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
     .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
@@ -115,6 +128,8 @@
     .footer-links a:hover { color: var(--gold); }
     .footer-copy { font-size: 0.65rem; color: rgba(249,248,244,0.2); }
     .footer-badge { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(249,248,244,0.35); border: 0.5px solid rgba(201,185,154,0.2); padding: 0.35rem 0.8rem; }
+
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
       nav { padding: 1rem 2rem; } .nav-links, .nav-cta { display: none; } .nav-hamburger { display: flex; }
       .hero-content { padding: 0 2rem 3.5rem; } .intro-section { padding: 3.5rem 2rem; } .highlights { padding: 0 2rem 3.5rem; }
@@ -126,6 +141,7 @@
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html" class="nav-logo"><img src="Favicon_kudjatravel_512.png" alt="" class="nav-logo-img" />KUDJA<span>.</span>TRAVEL</a>
     <ul class="nav-links" aria-label="Navigation principale">
@@ -145,9 +161,9 @@
           <a href="en-famille.html">En famille</a>
           <a href="evjf-aux-antilles.html">EVJF aux Antilles</a>
           <a href="seminaire-incentive.html">Séminaire incentive</a>
-                <a href="sejour-authentique.html">Authentique</a>
-                <a href="sejour-reconnexion.html">Reconnexion à soi</a>
-                <a href="aventure-adrenaline.html">Aventure &amp; Adrénaline</a>
+          <a href="sejour-authentique.html">Authentique</a>
+          <a href="sejour-reconnexion.html">Reconnexion à soi</a>
+          <a href="aventure-adrenaline.html" class="active">Aventure &amp; Adrénaline</a>
         </div>
       </li>
       <li><a href="a-propos.html">À propos</a></li>
@@ -158,6 +174,7 @@
     <button class="nav-cta" onclick="window.location='index.html#contact'">Demander un devis</button>
     <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
+
   <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
     <a href="index.html#destinations" onclick="closeMenu()">Destinations</a>
     <a href="guadeloupe.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Guadeloupe</a>
@@ -179,84 +196,88 @@
     <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg" role="img" aria-label="Voyage de noces romantique aux Antilles"></div>
+    <div class="hero-bg" role="img" aria-label="Coucher de soleil en Martinique, aventure aux Antilles"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Séjour à thème</p>
-      <h1>Voyages<br>de noce</h1>
+      <h1>Aventure<br>&amp; Adrénaline</h1>
     </div>
   </section>
 
+  <!-- INTRO -->
   <div class="intro-section">
-    <p class="intro-label">Pour les amoureux</p>
-    <p class="intro-text">Les Antilles incarnent l'idéal du voyage de noces : eaux turquoise, plages désertes, hébergements d'exception et une douceur de vivre qui invite à ralentir. Chez Kudja Travel, nous construisons votre lune de miel depuis le premier message jusqu'au retour, en prenant soin de chaque détail.</p>
-    <p class="intro-text">Surprises à l'arrivée, dîners privés sur la plage, excursions en catamaran pour deux, nuits dans des villas avec piscine à débordement face à la mer — chaque moment est pensé pour vous.</p>
-    <p class="intro-transition">Quelques expériences que nous adorons organiser pour les mariés :</p>
+    <p class="intro-label">Les Antilles côté sensations fortes</p>
+    <p class="intro-text">Les Antilles ne sont pas seulement belles à regarder. Elles se vivent, elles se glissent, elles se grimpent, elles se sautent. La mer qui bat les côtes de Guadeloupe et de Martinique n'attend que ceux qui osent s'y jeter, les forêts de Basse-Terre réservent des canyons que l'on ne voit qu'en rappel, et les hauteurs offrent des panoramas accessibles seulement à ceux qui chaussent leurs chaussures ou enfourchent leur vélo.</p>
+    <p class="intro-text">Ce séjour, je le construis pour celles et ceux qui veulent ressentir les Antilles autrement. Pas dans un transat (même si la fin de journée s'y passe très bien), mais en action, en mouvement, en adrénaline. Débutant ou confirmé, il y a ici quelque chose pour chaque niveau et chaque appétit de sensations.</p>
+    <p class="intro-transition">Ce que j'organise pour vous dans un séjour Aventure :</p>
   </div>
 
+  <!-- EXPÉRIENCES -->
   <div class="highlights">
 
     <div class="highlight">
       <div class="highlight-photo">
-        <img src="images/guad-les-saintes.webp" alt="Les Saintes, Guadeloupe — village romantique et baie exceptionnelle" width="800" height="600" loading="lazy" />
+        <img src="images/aventure-nautique.webp" alt="Sports nautiques dans les eaux cristallines des Antilles" width="1400" height="900" loading="lazy" />
       </div>
       <div class="highlight-content">
-        <span class="highlight-num">01 — Guadeloupe</span>
+        <span class="highlight-num">01 — Guadeloupe & Martinique</span>
         <div class="highlight-line"></div>
-        <h2 class="highlight-name">Nuit aux Saintes</h2>
-        <p class="highlight-desc">Terre-de-Haut, classée parmi les plus belles baies du monde, accueille quelques adresses confidentielles idéales pour une nuit ou deux hors du temps. Ruelles colorées, vue sur la baie, tranquillité absolue.</p>
+        <h2 class="highlight-name">Sports nautiques</h2>
+        <p class="highlight-desc">Plongez dans les eaux cristallines des Antilles et laissez-vous porter par l'adrénaline des sports nautiques. La Guadeloupe et la Martinique ont tout ce qu'il faut pour vous initier ou vous perfectionner, avec des moniteurs certifiés et des spots qui font rêver. Le surf sur les vagues de Capesterre ou du Carbet pour les amateurs de glisse. Le kitesurf et le wing surf sur les lagons de Grande-Terre où le vent est parfaitement régulier. La planche à voile pour ceux qui veulent marier technique et vitesse. Chaque discipline a ses spots de référence, et je vous oriente vers les meilleures écoles et les meilleurs endroits selon votre niveau et la saison.</p>
       </div>
     </div>
 
     <div class="highlight">
       <div class="highlight-photo">
-        <img src="images/noce-snorkeling.webp" alt="Snorkeling aux Anses-d'Arlet, Martinique — tortues et coraux" width="1400" height="900" loading="lazy" />
+        <img src="images/aventure-aerien.webp" alt="Vue aérienne sur la Soufrière et les paysages de Guadeloupe" width="1400" height="900" loading="lazy" />
       </div>
       <div class="highlight-content">
-        <span class="highlight-num">02 — Martinique</span>
+        <span class="highlight-num">02 — Guadeloupe & Martinique</span>
         <div class="highlight-line"></div>
-        <h2 class="highlight-name">Snorkeling aux Anses-d'Arlet</h2>
-        <p class="highlight-desc">Plongez dans l'une des plus belles baies de la Martinique, entre tortues marines et coraux colorés. Après cette parenthèse sous-marine, déjeuner local les pieds dans le sable, cocktail à la main, allongés sur les transats. Le tempo parfait pour un voyage de noces.</p>
+        <h2 class="highlight-name">Activités aériennes</h2>
+        <p class="highlight-desc">Pour les amateurs de sensations fortes, voir les Antilles depuis les airs change tout. Le gyrocoptère survole la côte, les plages et la forêt à basse altitude, avec une sensation de liberté absolue et des vues impossibles à avoir autrement. Le parapente depuis les hauteurs de Martinique vous offre un vol plané face à la mer des Caraïbes avec les Pitons en toile de fond. Et pour les plus courageux, le saut en parachute en tandem au-dessus de la Guadeloupe, avec une chute libre sur fond de cocotiers et de lagon turquoise, est une expérience que l'on ne fait qu'une fois mais que l'on raconte toujours. Ces expériences permettent de voir les Antilles sous un angle radicalement nouveau.</p>
       </div>
     </div>
 
     <div class="highlight">
       <div class="highlight-photo">
-        <img src="images/dom-trafalgar.webp" alt="Chutes de Trafalgar, Dominique — nature préservée et intimité" width="800" height="600" loading="lazy" />
+        <img src="images/aventure-canyoning.webp" alt="Cascade en Guadeloupe pour le canyoning" width="1400" height="900" loading="lazy" />
       </div>
       <div class="highlight-content">
-        <span class="highlight-num">03 — Dominique</span>
+        <span class="highlight-num">03 — Guadeloupe</span>
         <div class="highlight-line"></div>
-        <h2 class="highlight-name">Évasion nature à la Dominique</h2>
-        <p class="highlight-desc">Pour les couples qui veulent fuir les sentiers battus, la Dominique offre une intimité rare. Sources chaudes naturelles, forêts tropicales vierges, lodges éco-luxe perchés dans la végétation. Une nature à couper le souffle.</p>
+        <h2 class="highlight-name">Canyoning</h2>
+        <p class="highlight-desc">La Basse-Terre est traversée par des canyons qui restent confidentiels parce qu'il faut s'y aventurer en rappel pour les découvrir. Descendre une cascade en rappel, sauter dans une piscine naturelle creusée dans la roche volcanique, se faufiler entre des parois que le soleil n'atteint presque jamais : le canyoning en Guadeloupe offre une immersion totale dans la nature sauvage de l'île. Cette activité se fait obligatoirement avec un guide certifié, et je sélectionne les meilleurs opérateurs pour garantir sécurité et qualité de l'encadrement. Les initiations pour les débutants sont disponibles, tout comme les sessions plus techniques pour les pratiquants expérimentés.</p>
       </div>
     </div>
 
     <div class="highlight">
       <div class="highlight-photo">
-        <img src="images/noce-catamaran.webp" alt="Croisière privée en catamaran aux Grenadines — voyage de noces" width="1400" height="900" loading="lazy" />
+        <img src="images/aventure-vtt.webp" alt="Route de montagne en Martinique pour le VTT" width="1400" height="900" loading="lazy" />
       </div>
       <div class="highlight-content">
-        <span class="highlight-num">04 — Les Grenadines</span>
+        <span class="highlight-num">04 — Guadeloupe & Martinique</span>
         <div class="highlight-line"></div>
-        <h2 class="highlight-name">Croisière privée aux Tobago Cays</h2>
-        <p class="highlight-desc">Les Grenadines, ça ne se résume pas à une escale — ça se vit. Comptez minimum 10 jours pour naviguer d'île en île, ancrer face aux Tobago Cays, snorkeler avec les tortues marines et regarder le soleil se coucher depuis le pont. Pour les couples qui veulent une expérience encore plus exclusive, nous organisons une croisière en catamaran privatisé : rien que vous deux, votre équipage, et l'un des plus beaux archipels du monde.</p>
+        <h2 class="highlight-name">Randonnée VTT</h2>
+        <p class="highlight-desc">Enfourchez votre vélo et partez explorer les reliefs sauvages de Guadeloupe et de Martinique. Les circuits VTT offrent des plongées dans la nature que peu d'autres activités permettent : forêts tropicales denses, chemins de terre au bord des côtes, descentes techniques sur les flancs du massif de la Soufrière ou de la Montagne Pelée. Il existe des parcours pour tous les niveaux, du circuit découverte en famille aux boucles sportives pour les pratiquants confirmés qui cherchent un défi en pleine nature. Cette activité peut se faire en autonomie avec un plan de circuits, ou accompagnée d'un guide qui connaît les chemins et la faune locale sur le bout des doigts.</p>
       </div>
     </div>
 
   </div>
 
+  <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div>
-      <p class="contact-label">Parlons de votre voyage</p>
-      <h2 class="contact-title">Prêt(e)s à partir<br><em>en voyage de noces ?</em></h2>
+      <p class="contact-label">Parlons de votre séjour</p>
+      <h2 class="contact-title">On organise votre<br><em>séjour adrénaline ?</em></h2>
       <div class="contact-detail">
         <div><div class="contact-detail-label">Email</div><a href="mailto:contact@kudjatravel.com">contact@kudjatravel.com</a></div>
         <div><div class="contact-detail-label">Téléphone</div><a href="tel:+33659454184">+33 6 59 45 41 84</a></div>
         <div><div class="contact-detail-label">Instagram</div><a href="https://www.instagram.com/kudjatravel/" target="_blank" rel="noopener">@kudjatravel</a></div>
       </div>
-      <p style="font-size:0.78rem;color:var(--muted);line-height:1.8;max-width:360px;">« Votre voyage de noces mérite d'être aussi unique que votre histoire. Partagez-moi vos envies, je m'occupe du reste. »</p>
+      <p style="font-size:0.78rem;color:var(--muted);line-height:1.8;max-width:360px;">« Les Antilles se vivent à fond ou pas du tout. Dites-moi ce que vous voulez ressentir, et je construis le programme qui va faire battre votre coeur. »</p>
       <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);margin-top:0.75rem;">— Mégane</p>
     </div>
     <form class="contact-form" onsubmit="handleForm(event)">
@@ -267,13 +288,27 @@
       <div class="form-group"><label for="email">Adresse mail *</label><input type="email" id="email" name="email" required placeholder="votre@email.com" /></div>
       <div class="form-group"><label for="tel">N° de mobile</label><input type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00" /></div>
       <div class="form-group">
-        <label for="destination">Destination souhaitée</label>
-        <select id="destination" name="destination">
-          <option value="" disabled selected>Choisir…</option>
-          <option>Guadeloupe</option><option>Martinique</option><option>Dominique</option><option>Grenadines</option><option>Combiné plusieurs îles</option><option>Pas encore décidé(e)</option>
+        <label for="experience">Activité souhaitée</label>
+        <select id="experience" name="experience">
+          <option value="" disabled selected>Ce qui vous fait vibrer…</option>
+          <option>Sports nautiques (surf, kitesurf, windsurf)</option>
+          <option>Activités aériennes (parapente, gyrocoptère, parachute)</option>
+          <option>Canyoning</option>
+          <option>Randonnée VTT</option>
+          <option>Un mix de tout ça</option>
         </select>
       </div>
-      <div class="form-group"><label for="message">Votre projet</label><textarea id="message" name="message" placeholder="Dates envisagées, budget, envies particulières…"></textarea></div>
+      <div class="form-group">
+        <label for="destination">Destination envisagée</label>
+        <select id="destination" name="destination">
+          <option value="" disabled selected>Votre île de coeur…</option>
+          <option>Guadeloupe</option>
+          <option>Martinique</option>
+          <option>Les deux</option>
+          <option>Pas encore décidé(e)</option>
+        </select>
+      </div>
+      <div class="form-group"><label for="message">Votre projet</label><textarea id="message" name="message" placeholder="Dates, budget, nombre de personnes, niveau de pratique, envies particulières…"></textarea></div>
       <button type="submit" class="btn-primary" style="align-self:flex-start;margin-top:0.5rem;">Envoyer ma demande</button>
     </form>
   </section>
@@ -290,15 +325,43 @@
     <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
   </footer>
 
-  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg></a>
+  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMobile = document.getElementById('navMobile');
-    hamburger.addEventListener('click', () => { const isOpen = navMobile.classList.toggle('open'); hamburger.classList.toggle('open', isOpen); hamburger.setAttribute('aria-expanded', isOpen); document.body.style.overflow = isOpen ? 'hidden' : ''; });
-    function closeMenu() { navMobile.classList.remove('open'); hamburger.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
-    async function handleForm(e) { e.preventDefault(); const btn = e.target.querySelector('[type="submit"]'); btn.textContent = 'Envoi en cours…'; btn.disabled = true; try { const res = await fetch('https://formspree.io/f/xjgpprao', { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } }); if (res.ok) { btn.textContent = 'Message envoyé ✓'; btn.style.background = '#3D5A3E'; e.target.reset(); } else { btn.textContent = 'Erreur — réessayez'; btn.style.background = '#8B4444'; btn.disabled = false; } } catch { btn.textContent = 'Erreur — réessayez'; btn.style.background = '#8B4444'; btn.disabled = false; } }
-    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; observer.unobserve(e.target); } }); }, { threshold: 0.08 });
-    document.querySelectorAll('.highlight').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(28px)'; el.style.transition='opacity 0.7s ease, transform 0.7s ease'; observer.observe(el); });
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMenu() {
+      navMobile.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    async function handleForm(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type="submit"]');
+      btn.textContent = 'Envoi en cours…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('https://formspree.io/f/xjgpprao', { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
+        if (res.ok) { btn.textContent = 'Message envoyé ✓'; btn.style.background = '#3D5A3E'; e.target.reset(); }
+        else { btn.textContent = 'Erreur — réessayez'; btn.style.background = '#8B4444'; btn.disabled = false; }
+      } catch { btn.textContent = 'Erreur — réessayez'; btn.style.background = '#8B4444'; btn.disabled = false; }
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.highlight').forEach(el => {
+      el.style.opacity='0'; el.style.transform='translateY(28px)'; el.style.transition='opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    });
   </script>
 </body>
 </html>

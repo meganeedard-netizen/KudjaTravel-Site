@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Séjours à Thème aux Antilles | Kudja Travel</title>
+  <meta name="description" content="Voyages de noce, EVJF, en famille, séminaire, reconnexion, aventure : découvrez tous les séjours à thème aux Antilles organisés par Kudja Travel." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kudjatravel.com/sejours-a-theme/" />
+  <link rel="icon" type="image/png" href="Favicon_kudjatravel_512.png" />
+  <link rel="apple-touch-icon" href="Favicon_kudjatravel_512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#0D0D0B; --gold:#B8965A; --gold-light:#D4AF6E; --cream:#F5F0E8; --muted:rgba(249,248,244,0.55); --border:rgba(201,185,154,0.2); --white:#FAFAF8; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--ink); color: var(--white); overflow-x: hidden; line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== NAV ===== */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2rem; background: rgba(13,13,11,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .nav-logo span { color: var(--gold); }
+    .nav-logo-img { display: inline-block; height: 26px; width: auto; filter: brightness(0) invert(1); margin-right: 0.55rem; vertical-align: middle; }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 0.35rem; }
+    .nav-dropdown > a::after { content: ''; display: inline-block; width: 4px; height: 4px; border-right: 0.5px solid currentColor; border-bottom: 0.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
+    .nav-dropdown:hover > a { color: var(--gold-light); }
+    .nav-dropdown:hover > a::after { transform: rotate(-135deg) translateY(0); }
+    .dropdown-menu { position: absolute; top: 100%; left: 0; background: rgba(13,13,11,0.97); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 0.5px solid var(--border); min-width: 210px; padding: 1rem 0 0.4rem; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity 0.22s, transform 0.22s, visibility 0.22s; pointer-events: none; }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+    .dropdown-menu a { display: block; padding: 0.7rem 1.5rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); transition: color 0.2s, background 0.2s; white-space: nowrap; }
+    .dropdown-menu a:hover { color: var(--gold-light); background: rgba(201,185,154,0.05); }
+    .dropdown-menu a + a { border-top: 0.5px solid rgba(201,185,154,0.08); }
+    .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.65rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 110; }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--cream); transition: all 0.3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(13,13,11,0.97); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; overflow-y: auto; padding: 2rem 0; }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-mobile a:hover { color: var(--gold-light); }
+    .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
+
+    /* ===== HEADER ===== */
+    .page-header { padding: 7rem 3rem 4rem; border-bottom: 0.5px solid var(--border); }
+    .page-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+    .page-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
+    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1; letter-spacing: -0.01em; margin-bottom: 1.5rem; }
+    .page-title em { font-style: italic; color: var(--gold-light); }
+    .page-intro { font-size: 1rem; line-height: 1.9; color: var(--muted); max-width: 600px; }
+
+    /* ===== GRILLE ===== */
+    .themes-section { padding: 4rem 3rem 6rem; }
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+    }
+    .theme-card {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: rgba(201,185,154,0.04);
+    }
+    .theme-photo {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.7s ease;
+    }
+    .theme-card:hover .theme-photo { transform: scale(1.06); }
+    .theme-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,13,11,0.88) 0%, rgba(13,13,11,0.3) 50%, rgba(13,13,11,0.05) 100%);
+      transition: background 0.4s;
+    }
+    .theme-card:hover .theme-overlay { background: linear-gradient(to top, rgba(13,13,11,0.92) 0%, rgba(13,13,11,0.45) 55%, rgba(13,13,11,0.1) 100%); }
+    .theme-inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+    .theme-number { font-family: 'Cormorant Garamond', serif; font-size: 0.65rem; letter-spacing: 0.25em; color: var(--gold); margin-bottom: 0.5rem; display: block; }
+    .theme-dot { width: 24px; height: 0.5px; background: var(--gold); margin-bottom: 0.75rem; opacity: 0.6; }
+    .theme-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 0.6rem; }
+    .theme-desc { font-size: 0.78rem; line-height: 1.7; color: var(--muted); margin-bottom: 1rem; }
+    .theme-link { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.2s; }
+    .theme-card:hover .theme-link { gap: 0.85rem; }
+
+    /* ===== CTA ===== */
+    .cta-band { padding: 5rem 3rem; text-align: center; border-top: 0.5px solid var(--border); }
+    .cta-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .cta-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; color: var(--cream); margin-bottom: 2rem; line-height: 1.2; }
+    .cta-title em { font-style: italic; color: var(--gold-light); }
+    .btn-primary { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; border: none; cursor: pointer; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: var(--gold-light); }
+
+    /* ===== FOOTER ===== */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+    footer { padding: 3rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 300; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase; }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(249,248,244,0.35); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.65rem; color: rgba(249,248,244,0.2); }
+    .footer-badge { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(249,248,244,0.35); border: 0.5px solid rgba(201,185,154,0.2); padding: 0.35rem 0.8rem; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      nav { padding: 1rem 2rem; } .nav-links, .nav-cta { display: none; } .nav-hamburger { display: flex; }
+      .page-header { padding: 5rem 2rem 3rem; }
+      .themes-section { padding: 3rem 2rem 4rem; }
+      .themes-grid { grid-template-columns: repeat(2, 1fr); }
+      footer { padding: 2rem; }
+    }
+    @media (max-width: 600px) {
+      .themes-grid { grid-template-columns: 1fr; }
+      .theme-card { aspect-ratio: 3/2; }
+      .cta-band { padding: 3.5rem 2rem; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Favicon_kudjatravel_512.png" alt="" class="nav-logo-img" />KUDJA<span>.</span>TRAVEL</a>
+    <ul class="nav-links" aria-label="Navigation principale">
+      <li class="nav-dropdown">
+        <a href="index.html#destinations">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="guadeloupe.html">Guadeloupe</a>
+          <a href="martinique.html">Martinique</a>
+          <a href="dominique.html">Dominique</a>
+          <a href="les-grenadines.html">Les Grenadines</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="sejours-a-theme.html">Séjours à thème</a>
+        <div class="dropdown-menu">
+          <a href="voyages-de-noce.html">Voyages de noce</a>
+          <a href="en-famille.html">En famille</a>
+          <a href="evjf-aux-antilles.html">EVJF aux Antilles</a>
+          <a href="seminaire-incentive.html">Séminaire incentive</a>
+          <a href="sejour-authentique.html">Authentique</a>
+          <a href="sejour-reconnexion.html">Reconnexion à soi</a>
+          <a href="aventure-adrenaline.html">Aventure &amp; Adrénaline</a>
+        </div>
+      </li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="window.location='index.html#contact'">Demander un devis</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="index.html#destinations" onclick="closeMenu()">Destinations</a>
+    <a href="guadeloupe.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Guadeloupe</a>
+    <a href="martinique.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Martinique</a>
+    <a href="dominique.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Dominique</a>
+    <a href="les-grenadines.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Les Grenadines</a>
+    <a href="sejours-a-theme.html" onclick="closeMenu()">Séjours à thème</a>
+    <a href="voyages-de-noce.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Voyages de noce</a>
+    <a href="en-famille.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">En famille</a>
+    <a href="evjf-aux-antilles.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">EVJF aux Antilles</a>
+    <a href="seminaire-incentive.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Séminaire incentive</a>
+    <a href="sejour-authentique.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Authentique</a>
+    <a href="sejour-reconnexion.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Reconnexion à soi</a>
+    <a href="aventure-adrenaline.html" onclick="closeMenu()" style="font-size:1.2rem;color:var(--gold);">Aventure &amp; Adrénaline</a>
+    <a href="a-propos.html" onclick="closeMenu()">À propos</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+    <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Demander un devis</a>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <p class="page-eyebrow">Kudja Travel</p>
+    <h1 class="page-title">Voyagez selon<br><em>vos envies</em></h1>
+    <p class="page-intro">Chaque voyage mérite d'être pensé pour vous. Découvrez tous nos séjours à thème aux Antilles : des expériences construites sur mesure, selon vos envies, votre rythme et ce qui vous fait vibrer.</p>
+  </div>
+
+  <!-- GRILLE DES SÉJOURS -->
+  <section class="themes-section">
+    <div class="themes-grid">
+
+      <a href="voyages-de-noce.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-voyage-noce.webp');" role="img" aria-label="Voyages de noce aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">01</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">Voyages de noce</h2>
+          <p class="theme-desc">Hébergements romantiques, couchers de soleil, dîners les pieds dans l'eau. Un voyage construit pour deux.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="en-famille.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/famille-plage.webp');" role="img" aria-label="Voyage en famille aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">02</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">En famille</h2>
+          <p class="theme-desc">Activités adaptées à tous les âges, logements sûrs, expériences locales mémorables pour petits et grands.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="evjf-aux-antilles.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-evjf-antilles.webp');" role="img" aria-label="EVJF aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">03</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">EVJF aux Antilles</h2>
+          <p class="theme-desc">Entre filles, soleil et cocktails. Un dernier séjour de célibataire mémorable.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="seminaire-incentive.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/theme-seminaire.webp');" role="img" aria-label="Séminaire incentive aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">04</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">Séminaire incentive</h2>
+          <p class="theme-desc">Teambuilding, espaces privatisés, logistique complète.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="sejour-authentique.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/authentique-hero.webp');" role="img" aria-label="Séjour authentique aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">05</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">Authentique</h2>
+          <p class="theme-desc">Déjeuner chez l'habitant, musique traditionnelle, agrotourisme et ateliers artisanaux : les Antilles de l'intérieur.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="sejour-reconnexion.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/reconnexion-hero.webp');" role="img" aria-label="Séjour reconnexion à soi aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">06</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">Reconnexion à soi</h2>
+          <p class="theme-desc">Écolodge en forêt, massage au bord de l'eau, yoga, randonnées : un séjour pour se retrouver vraiment.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+      <a href="aventure-adrenaline.html" class="theme-card">
+        <div class="theme-photo" style="background-image:url('images/aventure-hero.webp');" role="img" aria-label="Séjour aventure et adrénaline aux Antilles"></div>
+        <div class="theme-overlay"></div>
+        <div class="theme-inner">
+          <span class="theme-number">07</span>
+          <div class="theme-dot"></div>
+          <h2 class="theme-title">Aventure &amp; Adrénaline</h2>
+          <p class="theme-desc">Surf, kitesurf, parapente, canyoning, VTT : les Antilles à fond pour les amateurs de sensations fortes.</p>
+          <span class="theme-link">Découvrir →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <p class="cta-label">Votre séjour sur-mesure</p>
+    <h2 class="cta-title">Vous ne trouvez pas<br><em>exactement ce que vous cherchez ?</em></h2>
+    <a href="index.html#contact" class="btn-primary">Me parler de votre projet</a>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">KUDJA<span>.</span>TRAVEL</a>
+    <ul class="footer-links">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politiques-de-confidentialites.html">Confidentialité</a></li>
+      <li><a href="cgv.html">CGV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="footer-badge">Activité assurée en RC Pro par Hiscox</p>
+    <p class="footer-copy">© 2026 Kudja Travel · Guadeloupe</p>
+  </footer>
+
+  <a href="https://wa.me/33659454184?text=Bonjour%20Mégane%2C%20je%20souhaite%20organiser%20un%20voyage%20aux%20Antilles%20avec%20Kudja%20Travel%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Kudja Travel sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMenu() {
+      navMobile.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; observer.unobserve(e.target); } });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.theme-card').forEach(el => {
+      el.style.opacity='0'; el.style.transform='translateY(20px)'; el.style.transition='opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
