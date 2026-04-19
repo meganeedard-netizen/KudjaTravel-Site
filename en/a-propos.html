@@ -74,22 +74,19 @@
     .nav-mobile a:hover { color: var(--gold-light); }
     .nav-mobile .nav-mobile-cta { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 0.9rem 2.5rem; margin-top: 1rem; }
 
-    /* ===== HERO ===== */
-    .hero { position: relative; height: 70vh; min-height: 480px; display: flex; align-items: flex-end; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background-image: url('../images/hero-portrait.webp'); background-size: cover; background-position: center top; }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,13,11,0.1) 0%, rgba(13,13,11,0.05) 30%, rgba(13,13,11,0.7) 70%, rgba(13,13,11,1) 100%); }
-    .hero-content { position: relative; z-index: 2; padding: 0 3rem 5rem; }
+    /* PAGE HEADER */
+    .page-header { padding: 6rem 3rem 4rem; border-bottom: 0.5px solid var(--border); }
     .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 0.5px; background: var(--gold); }
-    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 300; color: var(--cream); line-height: 1.1; }
 
     /* ===== INTRO ===== */
     .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 0.5px solid var(--border); }
-    .intro-text-block { padding: 5rem 3rem; }
+    .intro-text-block { padding: 3rem 3rem; }
     .intro-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
     .intro-body { font-size: 1rem; line-height: 1.9; color: var(--muted); margin-bottom: 1.25rem; }
     .intro-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; font-weight: 300; color: var(--cream); line-height: 1.5; border-left: 1px solid var(--gold); padding-left: 1.5rem; margin: 2rem 0; }
-    .intro-photo { position: relative; overflow: hidden; min-height: 500px; }
+    .intro-photo { position: relative; overflow: hidden; min-height: 360px; max-height: 480px; }
     .intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; position: absolute; inset: 0; }
 
     /* ===== VALUES ===== */
@@ -137,10 +134,9 @@
       footer { padding: 2rem; }
     }
     @media (max-width: 640px) {
-      h1 { font-size: clamp(3rem, 14vw, 5rem); }
+      .page-header { padding: 4rem 2rem 3rem; }
       .values-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
-      .hero-content { padding: 0 2rem 3.5rem; }
     }
   </style>
 </head>
@@ -209,15 +205,10 @@
     <a href="index.html#contact" class="nav-mobile-cta" onclick="closeMenu()">Get a quote</a>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg" role="img" aria-label="Mégane, Kudja Travel planner"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">The face behind Kudja Travel</p>
-      <h1>Hello,<br>I'm Mégane!</h1>
-    </div>
-  </section>
+  <div class="page-header">
+    <p class="hero-eyebrow">The face behind Kudja Travel</p>
+    <h1>Hello, I'm Mégane!</h1>
+  </div>
 
   <!-- INTRO -->
   <div class="intro">
