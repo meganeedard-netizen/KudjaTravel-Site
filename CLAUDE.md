@@ -23,12 +23,11 @@ Site web de **Kudja Travel**, agence de travel planning spécialisée dans les A
 **Tout le travail se fait en local.** Les fichiers sont dans :
 `/Users/meganeprietoblanco/Desktop/claude/kudja travel/`
 
-**Les modifications ne sont pushées sur GitHub qu'à la demande explicite de Mégane.** Ne jamais push automatiquement.
+**Workflow normal : toujours pusher après chaque modification.** Le site est hébergé sur OVH via un déploiement automatique connecté à GitHub. Après le push, le site se met à jour automatiquement en quelques minutes. Mégane n'intervient jamais sur OVH directement.
 
-Pour pusher quand demandé :
 ```bash
 cd "/Users/meganeprietoblanco/Desktop/claude/kudja travel"
-git add .
+git add -u
 git commit -m "message"
 git push
 ```
