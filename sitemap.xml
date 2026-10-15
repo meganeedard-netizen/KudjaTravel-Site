@@ -7,7 +7,7 @@
     <loc>https://kudjatravel.com/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/"/>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,16 +17,16 @@
     <loc>https://kudjatravel.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/"/>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- À propos FR -->
   <url>
-    <loc>https://kudjatravel.com/a-propos/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos/"/>
+    <loc>https://kudjatravel.com/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -34,9 +34,9 @@
 
   <!-- About EN -->
   <url>
-    <loc>https://kudjatravel.com/en/a-propos/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos/"/>
+    <loc>https://kudjatravel.com/en/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/a-propos.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -44,7 +44,7 @@
 
   <!-- Services FR -->
   <url>
-    <loc>https://kudjatravel.com/services/</loc>
+    <loc>https://kudjatravel.com/services.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -52,7 +52,7 @@
 
   <!-- Services EN -->
   <url>
-    <loc>https://kudjatravel.com/en/services/</loc>
+    <loc>https://kudjatravel.com/en/services.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -60,36 +60,36 @@
 
   <!-- Destinations FR -->
   <url>
-    <loc>https://kudjatravel.com/guadeloupe/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/guadeloupe/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/guadeloupe/"/>
+    <loc>https://kudjatravel.com/guadeloupe.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/guadeloupe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/guadeloupe.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/martinique/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/martinique/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/martinique/"/>
+    <loc>https://kudjatravel.com/martinique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/martinique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/martinique.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/dominique/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/dominique/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/dominique/"/>
+    <loc>https://kudjatravel.com/dominique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/dominique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/dominique.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/les-grenadines/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/les-grenadines/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/les-grenadines/"/>
+    <loc>https://kudjatravel.com/les-grenadines.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/les-grenadines.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/les-grenadines.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -97,36 +97,36 @@
 
   <!-- Destinations EN -->
   <url>
-    <loc>https://kudjatravel.com/en/guadeloupe/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/guadeloupe/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/guadeloupe/"/>
+    <loc>https://kudjatravel.com/en/guadeloupe.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/guadeloupe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/guadeloupe.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/martinique/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/martinique/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/martinique/"/>
+    <loc>https://kudjatravel.com/en/martinique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/martinique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/martinique.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/dominique/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/dominique/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/dominique/"/>
+    <loc>https://kudjatravel.com/en/dominique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/dominique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/dominique.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/les-grenadines/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/les-grenadines/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/les-grenadines/"/>
+    <loc>https://kudjatravel.com/en/les-grenadines.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/les-grenadines.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/les-grenadines.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -134,56 +134,56 @@
 
   <!-- Séjours à thème FR -->
   <url>
-    <loc>https://kudjatravel.com/sejours-a-theme/</loc>
+    <loc>https://kudjatravel.com/sejours-a-theme.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/voyages-de-noce/</loc>
+    <loc>https://kudjatravel.com/voyages-de-noce.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en-famille/</loc>
+    <loc>https://kudjatravel.com/en-famille.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/evjf-aux-antilles/</loc>
+    <loc>https://kudjatravel.com/evjf-aux-antilles.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/seminaire-incentive/</loc>
+    <loc>https://kudjatravel.com/seminaire-incentive.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/sejour-authentique/</loc>
+    <loc>https://kudjatravel.com/sejour-authentique.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/sejour-reconnexion/</loc>
+    <loc>https://kudjatravel.com/sejour-reconnexion.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/aventure-adrenaline/</loc>
+    <loc>https://kudjatravel.com/aventure-adrenaline.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -191,49 +191,49 @@
 
   <!-- Séjours à thème EN -->
   <url>
-    <loc>https://kudjatravel.com/en/voyages-de-noce/</loc>
+    <loc>https://kudjatravel.com/en/voyages-de-noce.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/en-famille/</loc>
+    <loc>https://kudjatravel.com/en/en-famille.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/evjf-aux-antilles/</loc>
+    <loc>https://kudjatravel.com/en/evjf-aux-antilles.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/seminaire-incentive/</loc>
+    <loc>https://kudjatravel.com/en/seminaire-incentive.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/sejour-authentique/</loc>
+    <loc>https://kudjatravel.com/en/sejour-authentique.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/sejour-reconnexion/</loc>
+    <loc>https://kudjatravel.com/en/sejour-reconnexion.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/aventure-adrenaline/</loc>
+    <loc>https://kudjatravel.com/en/aventure-adrenaline.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -241,56 +241,56 @@
 
   <!-- Blog FR -->
   <url>
-    <loc>https://kudjatravel.com/blog/</loc>
+    <loc>https://kudjatravel.com/blog.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-guadeloupe-itineraire/</loc>
+    <loc>https://kudjatravel.com/blog-guadeloupe-itineraire.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-martinique-plages/</loc>
+    <loc>https://kudjatravel.com/blog-martinique-plages.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-dominique/</loc>
+    <loc>https://kudjatravel.com/blog-dominique.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-grenadines-croisiere/</loc>
+    <loc>https://kudjatravel.com/blog-grenadines-croisiere.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-lune-de-miel/</loc>
+    <loc>https://kudjatravel.com/blog-lune-de-miel.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-famille-conseils/</loc>
+    <loc>https://kudjatravel.com/blog-famille-conseils.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/blog-evjf-guadeloupe/</loc>
+    <loc>https://kudjatravel.com/blog-evjf-guadeloupe.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -298,57 +298,86 @@
 
   <!-- Blog EN -->
   <url>
-    <loc>https://kudjatravel.com/en/blog/</loc>
+    <loc>https://kudjatravel.com/en/blog.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-guadeloupe-itineraire/</loc>
+    <loc>https://kudjatravel.com/en/blog-martinique-plages.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-martinique-plages/</loc>
+    <loc>https://kudjatravel.com/en/blog-dominique.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-dominique/</loc>
+    <loc>https://kudjatravel.com/en/blog-grenadines-croisiere.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-grenadines-croisiere/</loc>
+    <loc>https://kudjatravel.com/en/blog-lune-de-miel.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-lune-de-miel/</loc>
+    <loc>https://kudjatravel.com/en/blog-famille-conseils.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-famille-conseils/</loc>
+    <loc>https://kudjatravel.com/en/blog-evjf-guadeloupe.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://kudjatravel.com/en/blog-evjf-guadeloupe/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://kudjatravel.com/blog-tendacayou.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/blog-tendacayou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/blog-tendacayou.html"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/en/blog-tendacayou.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/blog-tendacayou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/blog-tendacayou.html"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/blog-evjf-canada.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/blog-evjf-canada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/blog-evjf-canada.html"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kudjatravel.com/en/blog-evjf-canada.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kudjatravel.com/blog-evjf-canada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kudjatravel.com/en/blog-evjf-canada.html"/>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
