@@ -251,7 +251,7 @@
         <div class="form-group"><label for="nom">Last name *</label><input type="text" id="nom" name="nom" required placeholder="Your last name" /></div>
       </div>
       <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required placeholder="your@email.com" /></div>
-      <div class="form-group"><label for="tel">Phone number</label><input type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00" /></div>
+      <div class="form-group"><label for="tel">Phone number *</label><input type="tel" required id="tel" name="tel" placeholder="+33 6 00 00 00 00" /></div>
       <div class="form-group">
         <label for="objet">Subject *</label>
         <select id="objet" name="objet" required>
@@ -288,7 +288,7 @@
     const navMobile = document.getElementById('navMobile');
     hamburger.addEventListener('click', () => { const o = navMobile.classList.toggle('open'); hamburger.classList.toggle('open', o); hamburger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; });
     function closeMenu() { navMobile.classList.remove('open'); hamburger.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-    function handleForm(e) { e.preventDefault(); const btn = e.target.querySelector('[type="submit"]'); btn.textContent = 'Message sent ✓'; btn.style.background = '#3D5A3E'; btn.disabled = true; }
+    async function handleForm(e) { e.preventDefault(); const btn = e.target.querySelector('[type="submit"]'); btn.textContent = 'Sending…'; btn.disabled = true; try { const res = await fetch('https://formspree.io/f/xjgpprao', { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } }); if (res.ok) { btn.textContent = 'Message sent ✓'; btn.style.background = '#3D5A3E'; e.target.reset(); } else { btn.textContent = 'Error, please try again'; btn.style.background = '#8B4444'; btn.disabled = false; } } catch { btn.textContent = 'Error, please try again'; btn.style.background = '#8B4444'; btn.disabled = false; } }
     const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; observer.unobserve(e.target); } }); }, { threshold: 0.08 });
     document.querySelectorAll('.highlight').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(28px)'; el.style.transition='opacity 0.7s ease, transform 0.7s ease'; observer.observe(el); });
   </script>

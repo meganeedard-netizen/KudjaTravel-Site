@@ -1880,7 +1880,7 @@
       <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);margin-top:0.75rem;">— Mégane</p>
     </div>
 
-    <form class="contact-form" name="contact" method="POST" action="#" onsubmit="handleForm(event)" novalidate>
+    <form class="contact-form" name="contact" method="POST" action="#" onsubmit="handleForm(event)">
       <div class="form-row">
         <div class="form-group">
           <label for="prenom">Prénom *</label>
@@ -1896,8 +1896,8 @@
         <input type="email" id="email" name="email" required placeholder="votre@email.com" autocomplete="email" />
       </div>
       <div class="form-group">
-        <label for="telephone">Téléphone</label>
-        <input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+        <label for="telephone">Téléphone *</label>
+        <input type="tel" required id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
       </div>
       <div class="form-group">
         <label for="objet">Objet de votre demande *</label>

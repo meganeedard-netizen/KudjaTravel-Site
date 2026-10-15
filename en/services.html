@@ -297,7 +297,7 @@
       <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);margin-top:0.75rem;">— Mégane</p>
     </div>
 
-    <form class="contact-form" name="contact" method="POST" action="#" onsubmit="handleForm(event)" novalidate>
+    <form class="contact-form" name="contact" method="POST" action="#" onsubmit="handleForm(event)">
       <div class="form-row">
         <div class="form-group">
           <label for="prenom">First name *</label>
@@ -313,8 +313,8 @@
         <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
       </div>
       <div class="form-group">
-        <label for="telephone">Phone</label>
-        <input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+        <label for="telephone">Phone *</label>
+        <input type="tel" required id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
       </div>
       <div class="form-group">
         <label for="objet">Package of interest *</label>
@@ -365,8 +365,8 @@
       try {
         const res = await fetch('https://formspree.io/f/xjgpprao', { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
         if (res.ok) { btn.textContent = 'Message sent ✓'; btn.style.background = '#3D5A3E'; e.target.reset(); }
-        else { btn.textContent = 'Error — please try again'; btn.style.background = '#8B4444'; btn.disabled = false; }
-      } catch { btn.textContent = 'Error — please try again'; btn.style.background = '#8B4444'; btn.disabled = false; }
+        else { btn.textContent = 'Error, please try again'; btn.style.background = '#8B4444'; btn.disabled = false; }
+      } catch { btn.textContent = 'Error, please try again'; btn.style.background = '#8B4444'; btn.disabled = false; }
     }
   </script>
 </body>
